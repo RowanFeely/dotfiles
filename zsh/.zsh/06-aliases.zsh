@@ -1,6 +1,6 @@
 #                 ██      
 #                ░██      
-#  ██████  ██████░██      
+#  ███████ █████ ░██      
 # ░░░░██  ██░░░░ ░██████  
 #    ██  ░░█████ ░██░░░██ 
 #   ██    ░░░░░██░██  ░██ 
@@ -14,11 +14,44 @@
 # ░▓▓▓▓▓▓▓▓▓▓
 # ░░░░░░░░░░
 #
+# █▓▒░ config aliases
+alias cleanupds="find . -type f -name '*.DS_Store' -ls -delete"
+alias ubersicht-config="nvim ~/Library/Application Support/ubersicht/"
+alias nvim-config="nvim ~/.vim"
+alias zsh-config="nvim ~/.zsh"
+alias ranger-config="nvim ~/.config/ranger"
+alias tmux-config="nvim ~/.tmux.conf"
+alias tmux-status-config="~/bin/tmux-status"
+
+# █▓▒░ TODO: fix list output space handling 
+#alias toilet-list='for font in `"ls" /usr/local/Cellar/toilet/0.3/share/figlet/*`; do toilet -f "$font" "rogue" && echo - "$font"; done;'
+alias figlet-list='for font in `"ls" -1 /usr/local/Cellar/toilet/0.3/share/figlet/*`; do figlet -c -f $font "rogue" && echo - "$font"; done;'
+alias figlet-control-list='for font in `"ls" /usr/local/Cellar/toilet/0.3/share/figlet/*.flc`; do figlet -C "$font" "rogue" && echo "- $font"; echo; echo; done;'
+
+alias rogue!="cat ~/dotfiles/banners/rogue-zsh-banner.ans"
+alias bonsai='./bonsai.sh -T -m "$(fortune)"'
+#█▓▒░ hue taps
+alias huered="hue lights 9 ff6a6a"
 #█▓▒░ aliases
+alias ss="bash ~/dotfiles/fun/bin/pipesx -t 1"
+alias cloudoff="~/bin/cloud.sh off"
+alias cloudon="~/bin/cloud.sh on"
+alias ccat="pygmentize -O style=sourcerer -f console256 -g"
+alias ontop="source ~/.zsh/plugins/almostontop/almostontop.plugin.zsh"
+alias unimatrix="python3 ~/repos/unimatrix/unimatrix.py -a -f -o -s 97 -l kssss"
+alias sysinfo="~/repos/xero_dotfiles/bin/bin/sysinfo"
+alias hdr="figlet -d ~/repos/xero_dotfiles/figlet -f 3d"
+alias hdrdtl='echo "#  ▓▓▓▓▓▓▓▓▓▓
+# ░▓ author ▓ ROGUE(X3) <rowanfeely.github.io>
+# ░▓   code ▓ https://github.com/RowanFeely/dotfiles
+# ░▓        ▓
+# ░▓▓▓▓▓▓▓▓▓▓
+# ░░░░░░░░░░"'
 alias xyzzy="echo nothing happens"
-alias ls="ls -hF --color=auto"
-alias ll="ls -lahF --color=auto"
-alias lsl="ls -lhF --color=auto"
+# eval $(thefuck --alias)
+alias ls="exa --icons --group-directories-first -x"
+alias ll="exa --icons -a --group-directories-first --git --git-ignore -b -B --color-scale --long"
+alias lsl="exa --icons --group-directories-first -a -l"
 alias "cd.."="cd ../"
 alias up="cd ../"
 alias rmrf="rm -rf"
@@ -28,7 +61,7 @@ alias grep="grep -i"
 alias cp="cp -r"
 alias scp="scp -r"
 alias xsel="xsel -b"
-alias fuck='sudo $(fc -ln -1)'
+# alias fuck='sudo $(fc -ln -1)'
 alias e="$EDITOR"
 alias se="sudo $EDITOR"
 alias v="nvim"
@@ -56,7 +89,7 @@ alias mixer="alsamixer"
 alias matrix="cmatrix -b"
 alias tempwatch="while :; do sensors; sleep 1 && clear; done;"
 alias term="urxvtc -hold -e " #used for run menu
-alias toiletlist='for i in ${TOILET_FONT_PATH:=/usr/share/figlet}/*.{t,f}lf; do j=${i##*/}; echo ""; echo "╓───── "$j; echo "╙────────────────────────────────────── ─ ─ "; echo ""; toilet -d "${i%/*}" -f "$j" "${j%.*}"; done'
+alias toiletlist='for i in ${TOILET_FONT_PATH:=/usr/local/share/figlet}/*.{t,f}lf; do j=${i##*/}; echo ""; echo "╓───── "$j; echo "╙────────────────────────────────────── ─ ─ "; echo ""; toilet -d "${i%/*}" -f "$j" "${j%.*}"; done'
 alias tdlist='for i in ${TD_FONT_PATH:=/usr/local/share/tdfiglet/fonts}/*.tdf; do j=${i##*/}; echo ""; echo "╓───── "$j; echo "╙────────────────────────────────────── ─ ─ "; echo ""; tdfiglet -f "$j" "${j%.*}"; done'
 alias ascii="toilet -t -f 3d"
 alias future="toilet -t -f future"

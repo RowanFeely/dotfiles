@@ -18,6 +18,9 @@
 " must be first, because it changes other options as a side effect
 set nocompatible
 
+" set shell to recognise aliases 
+set shell=/bin/zsh\ -i
+
 " security
 set modelines=0
 
@@ -28,6 +31,10 @@ set hidden
 set undofile
 set undodir=~/.vim/undo
 set noswapfile
+" Remove older (90 day) undo files
+let s:undos = split(globpath(&undodir, '*'), "\n")
+  call filter(s:undos, 'getftime(v:val) < localtime() - (60 * 60 * 24 * 90)')
+  call map(s:undos, 'delete(v:val)')
 
 " fuzzy find
 set path+=**

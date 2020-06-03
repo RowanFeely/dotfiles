@@ -1,7 +1,7 @@
 [user]
-	name = xero
-	email = x@xero.nu
-	signingkey = 0DA7AB45AC1D0000
+	name = Rowan Feely
+	email = rowanfeely@gmail.com
+	signingkey = 208D9F3269F9FC92
 [credential]
 	helper = cache
 [alias]
@@ -23,3 +23,8 @@
 	prompt = false
 [gpg]
 	program = gpg
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true

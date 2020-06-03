@@ -16,16 +16,19 @@
 "
 
 " wizard colors https://git.io/vim.sourcerer
-"colorscheme sourcerer
+colorscheme sourcerer
 
 " dark wizard colors http://git.io/blaquemagick.vim
-"colorscheme blaquemagick
+" colorscheme blaquemagick
 
 " icy chill
-colorscheme nord
+" colorscheme nord
 
 " use your shell colors
 "colorscheme noctu
+
+" integrate with wal color setting
+" colorscheme wal
 
 " omnifuncs
 augroup omnifuncs
@@ -54,7 +57,7 @@ if has('nvim')
   " let g:deoplete#disable_auto_complete = 1
   let g:deoplete#enable_ignore_case = 1
   if !exists('g:deoplete#omni#input_patterns')
-    let g:deoplete#omni#input_patterns = {}
+    let g:deoplete#custom#var = {}
   endif
   inoremap <expr><tab> pumvisible() ? "\<c-n>" : "\<tab>"
 endif

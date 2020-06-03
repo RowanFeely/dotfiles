@@ -67,5 +67,12 @@ Plug 'mbbill/undotree', { 'on': 'UndotreeToggle' }
 Plug 'roxma/vim-tmux-clipboard'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'melonmanchan/vim-tmux-resizer'
+Plug 'yegappan/mru'
 
+" env colorscheme fixer
+Plug 'dylanaraps/wal.vim'
+
+" black python formatter
+Plug 'psf/black'
 call plug#end()
+

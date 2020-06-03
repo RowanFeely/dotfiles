@@ -8,25 +8,26 @@
 # ░░░░░░ ░░░░░░  ░░   ░░  
 #
 #  ▓▓▓▓▓▓▓▓▓▓
-# ░▓ author ▓ xero <x@xero.nu>
-# ░▓ code   ▓ http://code.xero.nu/dotfiles
-# ░▓ mirror ▓ http://git.io/.files
+# ░▓ author ▓ ROGUE(X3) <rowanfeely.github.io>
+# ░▓   code ▓ https://github.com/RowanFeely/dotfiles
+# ░▓        ▓
 # ░▓▓▓▓▓▓▓▓▓▓
 # ░░░░░░░░░░
 
 #ICO_DIRTY="*"
-#ICO_DIRTY="↯"
-ICO_DIRTY="⚡"
+#ICO_DIRTY="/↯"
+#ICO_DIRTY="⚡"
+ICO_DIRTY="%F{yellow}•%f"
 
-ICO_AHEAD="↑"
+ICO_AHEAD="%F{7}↑%f"
 #ICO_AHEAD=""
 #ICO_AHEAD="▲"
 
-ICO_BEHIND="↓"
+ICO_BEHIND="%F{7}↓%f"
 #ICO_BEHIND=""
 #ICO_BEHIND="▼"
 
-ICO_DIVERGED="↕"
+ICO_DIVERGED="%F{7}↕%f"
 #ICO_DIVERGED=""
 #ICO_DIVERGED="נּ"
 
@@ -99,8 +100,7 @@ GIT_PROMPT() {
 case "$PROMPT_STYLE" in
 #█▓▒░ ascii
 ascii)
-PROMPT='%{$bg[cyan]%} %F{black}%~ $(GIT_PROMPT)$reset_color 
-%f'
+PROMPT='%{$bg[cyan]%} %F{black}%~ $(GIT_PROMPT)$reset_color %f'
 ;;
 #█▓▒░ arrows
 arrows)
