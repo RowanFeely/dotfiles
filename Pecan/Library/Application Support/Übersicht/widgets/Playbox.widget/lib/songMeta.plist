@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>albumName</key>
+	<string>Scorpion</string>
+	<key>artistName</key>
+	<string></string>
+	<key>coverURL</key>
+	<string>https://i.scdn.co/image/ab67616d0000b27323ddce858fdfad46782143e8</string>
+	<key>currentPosition</key>
+	<string>141</string>
+	<key>isLoved</key>
+	<string>false</string>
+	<key>oldFilename</key>
+	<string>NA</string>
+	<key>songChanged</key>
+	<string>false</string>
+	<key>songDuration</key>
+	<string>302</string>
+	<key>songName</key>
+	<string></string>
+</dict>
+</plist>

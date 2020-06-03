@@ -1,0 +1,121 @@
+# vim: syntax=neomuttrc
+
+# cancel theme colors
+color index default color0 ~Q
+color index default color0 ~P
+color index brightwhite color235 ~O
+color index white color235 ~F
+color index default color235 ~T
+color index color12 color0 ~N
+
+#color indicator color0 color243    # actual message
+color indicator color0 color7
+
+# add some nice custom coloring to the message list
+# thanks to new neomutt features
+# http://www.mutt.org/doc/manual/#patterns
+# https://neomutt.org/feature/index-color
+color index_subject color12 color0 "~P !~T !~D"
+color index_author color12 color0 "~P !~T !~D"
+
+color index_subject color243 color0 "~Q !~T !~D"
+color index_author color243 color0 "~Q !~T !~D"
+ 
+color index_subject brightwhite color235 "~O !~T !~D"
+color index_author brightwhite color235 "~O !~T !~D"
+
+color index_subject color14 color0 "~= !~T !~D"
+color index_author color14 color0 "~= !~T !~D"
+
+color index_subject brightcolor12 color0 "~P ~N !~T !~D"
+color index_author brightcolor12 color0 "~P ~N !~T !~D"
+
+# color index color238 color0 ~R
+# color index_flags color241 color0 ~R
+color index default default ~R
+
+#color index_subject color3 color0 "~F !~T !~D"
+#color index_author color3 color0 "~F !~T !~D"
+
+#color index_subject color4 color235 "~F ~N !~T !~D"
+#color index_author color4 color235 "~F ~N !~T !~D"
+
+#color index_subject color4 color0 "~N !~T !~D"
+#color index_author color4 color0 "~N !~T !~D"
+color index_flags color12 color235 "~N !~T !~D"
+color index_flags color11 color235 ~T
+color index_flags color11 color235 "~F !~T !~D"
+
+# DELETED
+color index color1 black "~D"
+color index_flags color1 black "~D"
+
+# Color if the attachment is autoviewed
+color attach_headers color12 default "Autoview"
+# Color only the brackets around the headers
+color attach_headers color8 default "^\\[--"
+color attach_headers color8 default "--]$"
+# Color the mime type and the size
+color attach_headers color15 color0 "Attachment "
+color attach_headers color15 color0 "#+[0-9\.]"
+color attach_headers color15 default "Type:"
+color attach_headers color12 default "[a-z]+/[a-z0-9\-]+"
+color attach_headers color15 default "Size:"
+color attach_headers green default "[0-9\.]+[KM]"
+
+# HIGHLIGHTED
+  # Highlight emails from SEEK
+  color index_author color13 default "~f jobmail@s.seek.com.au !~T !~D !~R !~N"
+  color index_subject color13 default "~f jobmail@s.seek.com.au !~T !~D !~R !~N"
+  color index_flags color13 default "~f jobmail@s.seek.com.au !~T !~D !~R !~N"
+  color index_author color13 color0 "~f jobmail@s.seek.com.au !~T !~D !~R ~N"
+  color index_subject color13 color0 "~f jobmail@s.seek.com.au !~T !~D !~R ~N"
+  color index_flags color13 color0 "~f jobmail@s.seek.com.au !~T !~D !~R ~N"
+
+# Highlight emails from HNews
+  color index_author color202 default "~f @hackernewsletter.com !~T !~D !~R !~N"
+  color index_subject color202 default "~f @hackernewsletter.com !~T !~D !~R !~N"
+  color index_flags color202 default "~f @hackernewsletter.com !~T !~D !~R !~N"
+  color index_author color202 color0 "~f @hackernewsletter.com !~T !~D !~R ~N"
+  color index_subject color202 color0 "~f @hackernewsletter.com !~T !~D !~R ~N"
+  color index_flags color13 color0 "~f @hackernewsletter.com !~T !~D !~R ~N"
+
+  color index_author color202 default "~f @hndigest.com !~T !~D !~R !~N"
+  color index_subject color202 default "~f @hndigest.com !~T !~D !~R !~N"
+  color index_flags color202 default "~f @hndigest.com !~T !~D !~R !~N"
+  color index_author color202 color0 "~f @hndigest.com !~T !~D !~R ~N"
+  color index_subject color202 color0 "~f @hndigest.com !~T !~D !~R ~N"
+  color index_flags color13 color0 "~f @hndigest.com !~T !~D !~R ~N"
+
+# Extra highlighting for the boss (just the author column)
+# color index_author cyan red "~f boss@work.com"
+# Add some highlights to the body of an email
+color body brightwhite color0 
+color body bold color4 default "(rowan|feely)"
+color body bold red default "^due$|^overdue$|^late$|^repayment$|^repayments$"
+color body yellow default "^warning$|^notice$|^statement$|^fee$|^pay$|^payment$|^payments$"
+color body color13 default "^job$|^jobs$|^information$|^communication$|^technology$|^systems$"
+color body bold brightwhite default "^git$|^github$|^gitlab$|^gitbucket$"
+color body blue default "^monash$|^faculty$|^university$|^uni$"
+# Make the label header red
+color header cyan default "X-Label"
+# Sidebar
+#color sidebar_divider color236 default # Dark grey
+#color sidebar_highlight color0 color4
+#color sidebar_indicator color7 color0
+#color sidebar_ordinary white color0
+
+color sidebar_highlight color7 default         # Dark blue background
+color sidebar_indicator brightwhite color8        # Grey background
+color sidebar_spoolfile color3 default         # Yellow
+color sidebar_new color0 color12         # Green
+color sidebar_ordinary brightwhite default         # Default colors
+color sidebar_flagged color0 color11        # Red
+color sidebar_divider color240 default        # Dark grey
+
+
+#TODO: 
+    # - powerline elements
+    # - message viewer/browser colors
+# tags go after read
+# flags seperate color

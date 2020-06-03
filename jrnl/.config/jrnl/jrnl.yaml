@@ -1,0 +1,21 @@
+default_hour: today
+default_minute: today
+editor: 'nvim -S ~/.config/nvim/writermode.vim'
+encrypt: false
+highlight: true
+indent_character: ' │ '
+journals:
+  default: ~/.jrnl/daily.txt
+  personal:
+    journal: ~/.jrnl/personal.txt
+    encrypt: true
+linewrap: 79
+tagsymbols: '#'
+template: false
+timeformat: ' ┍ %I:%M%p %A, %B%e:'
+colors:
+  date: YELLOW
+  title: CYAN
+  # body: WHITE
+  # tags: MAGENTA
+version: v2.2

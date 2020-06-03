@@ -1,0 +1,7 @@
+R:75
+G:71
+B:96
+GAME MODE
+brightness 25
+contrast 88
+saturation 46

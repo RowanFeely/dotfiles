@@ -1,0 +1,31 @@
+IMAPAccount          gmail
+Host                 imap.gmail.com
+User                 rowanfeely@gmail.com
+Pass                 6_RotJ/Sith
+AuthMechs            LOGIN
+# UseIMAPS             yes
+SSLType IMAPS
+SSLVersions SSLv3
+CertificateFile /Users/rowanfeely/Mail/certs/Certificates.pem
+
+IMAPStore            gmail-remote
+Account              gmail
+
+MaildirStore gmail-local
+# The trailing "/" is important
+Path ~/mail/gmail/
+Inbox ~/mail/gmail/Inbox
+Subfolders Verbatim
+
+Channel gmail
+Master :gmail-remote:
+Slave :gmail-local:
+# Exclude everything under the internal [Gmail] folder, except the interesting folders
+Patterns "Inbox" * ![Gmail]* "[Gmail]/Sent Mail" "[Gmail]/Starred" "[Gmail]/All Mail" "[Gmail]/Important"
+# Or include everything
+# Patterns *
+# Automatically create missing mailboxes, both locally and on the server
+Create Both
+Expunge Both
+# Save the synchronization state files in the relevant directory
+SyncState *

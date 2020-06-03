@@ -1,0 +1,159 @@
+# vim: syntax=neomuttrc
+#                                             ██   ██
+#                                            ░██  ░██
+#  ███████  █████  ██████ ██████████ ██   █████████████
+# ░░██░░░████░░░████░░░░█░░██░░██░░█░██  ░█░░░██░░░██░
+#  ░██  ░█░██████░██   ░██░██ ░██ ░█░██  ░██ ░██  ░██
+#  ░██  ░█░██░░░░░██   ░██░██ ░██ ░█░██  ░██ ░██  ░██
+#  ███  ░█░░█████░░██████ ███ ░██ ░█░░██████ ░░██ ░░██
+# ░░░   ░░ ░░░░░░ ░░░░░░ ░░░  ░░  ░░ ░░░░░░   ░░   ░░
+#
+#  ▓▓▓▓▓▓▓▓▓▓
+# ░▓ author ▓ ROGUE(X3)<rowanfeely.github.io>
+# ░▓   code ▓ https://github.com/RowanFeely/dotfiles
+# ░▓        ▓ http://rowanfeely.github.io
+# ░▓▓▓▓▓▓▓▓▓▓
+# ░░░░░░░░░░
+#
+###########
+# Accounts
+#
+set realname = "Rowan Feely"
+set from = "rowanfeely@gmail.com"
+set folder = "~/mail/gmail/" # This has the shortcut '+' or '='
+set spoolfile = "+inbox" # This has the shortcut '!'
+set record = "+sent"
+set trash = "+trash"
+set postponed = "+drafts"
+# unset help
+set mail_check_stats
+set mail_check_stats_interval = 5
+
+##########
+# Mailbox settings
+#
+set check_mbox_size
+set wait_key = no
+set mbox_type= Maildir
+set maildir_check_cur
+set timeout = 0
+set mail_check = 5
+set imap_keepalive = 300
+set net_inc=5
+set delete
+set quit
+set thorough_search
+unset confirmappend
+unset move
+set mark_old
+set beep_new
+set check_new
+set sendmail= "msmtp -a gmail rowanfeely@gmail.com"
+set sendmail_wait = -1
+set use_from=yes
+set keep_flagged
+# set new_mail_command="/usr/local/bin/notify-send -m '%n new messages, %u unread' -i '/Users/rowanfeely/Development/mail-notify.jpg'"
+# set new_mail_command="terminal-notifier -title '%v' -subtitle 'New Mail in %f' -message '%n new messages, %u unread.' -activate 'com.apple.Terminal'"
+mailboxes ="Inbox" ="[Gmail]/Starred" ="[Gmail]/Important" ="[Gmail]/Sent Mail" ="[Gmail]/All Mail"
+##############
+# Pager settings
+#
+ignore *
+unignore from: to:
+unhdr_order *
+hdr_order from: to:
+alternative_order text/plain text/html
+# when composing emails, use this command to get addresses from
+# the addressbook with khard first, and everything else from mu index
+# set query_command = "( khard email --parsable '%s' | sed -n '1!p'; mu cfind --format=mutt-ab '%s' )"
+set pager_index_lines = 8
+set pager_context = 3
+set pager_stop
+set menu_scroll
+unset tilde
+unset markers
+mime_lookup application/octet-stream
+auto_view text/html
+set index_format = %<[y?%<[d?%[%H:%M]&%[%m/%d]>&%[%y.%m]>
+###############
+# Index settings
+#
+set quit = ask-yes
+set sort = reverse-threads
+set sort_aux=last-date-received
+# unset mark_old           # read/new is good enough for me
+set pipe_decode          # strip headers and eval mimes when piping
+set thorough_search      # strip headers and eval mimes before searching
+set header_cache= "~/.neomutt/cache/headers"
+set message_cachedir = "~/.neomutt/cache/bodies"
+set certificate_file = "~/mail/certs/Certificates.cer"
+set tmpdir = "~/.neomutt/tmp"
+set mailcap_path = "~/.config/neomutt/mailcap"
+
+###############
+# Message composition settings
+#
+# compose View Options
+set envelope_from                    # which from?
+set edit_headers                     # show headers when composing
+set askcc                            # ask for CC:
+set fcc_attach                       # save attachments with the body
+set forward_format = "Fwd: %s"       # format of subject when forwarding
+set forward_decode                   # decode when forwarding
+set attribution = "On %d, %n wrote:" # format of quoting header
+set reply_to                         # reply to Reply to: field
+set reverse_name                     # reply as whomever it was to
+set include                          # include message in replies
+set forward_quote                    # include message in forwards
+set editor = "nvim -c 'set spell' -c 'set textwidth=72' -c 'set wrap' -c 'set nocp' -c '?^$'"
+set text_flowed
+unset sig_dashes                     # no dashes before sig
+unset mime_forward                   # forward attachments as part of body
+
+###############
+# GnuPG
+#
+set pgp_sign_as = 85555E72BD86438714BF6B6C208D9F3269F9FC92
+set crypt_use_gpgme = yes
+set crypt_autosign = no
+set crypt_verify_sig = yes
+set crypt_replysign = yes
+set crypt_replyencrypt = yes
+set crypt_replysignencrypted = yes
+
+###############
+# Sidebar
+#
+# set sidebar_new_mail_only
+set sidebar_visible                         # Make the Sidebar visible by default
+bind index,pager B sidebar-toggle-visible   # Use 'B' to switch the Sidebar on and off
+set sidebar_width = 25                      # Plenty of space
+set sidebar_divider_char = '│'              # Pretty line-drawing character
+set mail_check_stats
+set sidebar_short_path                      # Shorten mailbox names
+set sidebar_delim_chars="/"                 # Delete everything up to the last / character
+set sidebar_format ="%B%?F? [%F]?%* %?N?%N/?%S"
+# set sidebar_blacklist= *
+# sidebar_whitelist = "Inbox" "=[Gmail]/Starred"
+##############
+# Bindings
+#
+# opening urls with urlscan
+macro pager \cb "<pipe-message> urlscan<Enter>" "call urlscan to extract URLs out of a message"
+# Sync all email
+macro index,pager O "<shell-escape>mbsync -V -a<enter>" "run mbsync to sync all mail"
+macro index,pager A \
+"<save-message>+gmail/archive<enter>"  \
+  "move message to the archive"
+bind index,pager J sidebar-prev       # Ctrl-Shift-J - Previous Mailbox
+bind index,pager K sidebar-next       # Ctrl-Shift-K - Next Mailbox
+bind index,pager L sidebar-open       # Ctrl-Shift-L - Open Highlighted Mailbox
+macro attach 'V' "<pipe-entry>iconv -c --to-code=UTF8 > ~/.cache/mutt/mail.html<enter><shell-escape>/usr/local/bin/browsh ~/.cache/mutt/mail.html<enter>"
+bind  index,pager s  flag-message #Star a message
+folder-hook "+[Gmail]/Starred" bind index,pager y flag-message #"Toggle star"
+macro index,pager i  "<save-message>=[Gmail]/Important<enter><enter>" "Mark as important"
+
+###################
+# Sources
+source dracula.muttrc
+source powerline/powerline-rounded.neomuttrc

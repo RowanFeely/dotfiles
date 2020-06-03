@@ -1,0 +1,22 @@
+:root {
+  --base: #ff4800;
+  --base-ninety: rgba(255, 255, 255, 0.9);
+  --base-seventy-five: rgba(255, 255, 255, 0.75);
+  --base-seventy: rgba(255, 72, 0, 0.9);
+  --base-fifty: rgba(255, 255, 255, 0.5);
+  --base-fourty: rgba(255, 255, 255, 0.6);
+  --base-thiry: rgba(255, 255, 255, 0.3);
+  --base-twenty: rgba(255, 255, 255, 0.2);
+  --base-five: rgba(255, 255, 255, 0.05);
+  --base-ten: rgba(255, 255, 255, 0.1);
+  --base-nine: rgba(255, 255, 255, 0.09);
+  --container-color: #16000f;
+  --list-header-color: #210a1b;
+  --blue: #00e1ff;
+  --selected-conversation-background: linear-gradient(
+    hsla(209, 110%, 15%, 0.9),
+    hsla(209, 110%, 8%, 0.9)
+  );
+}
+
+

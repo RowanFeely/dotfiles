@@ -1,0 +1,180 @@
+#!/bin/sh
+#        ██
+#       ░██
+#      ██████ ██████████  ██   ██ ██   ██
+#     ░░░██░ ░░██░░██░░██░██  ░██░░██ ██
+#       ░██   ░██ ░██ ░██░██  ░██ ░░███
+#       ░██   ░██ ░██ ░██░██  ░██  ██░██
+#       ░░██  ███ ░██ ░██░░██████ ██ ░░██
+#        ░░  ░░░  ░░  ░░  ░░░░░░ ░░   ░░
+#           ██               ██
+#          ░██              ░██
+#  ██████ ██████  ██████   ██████ ██   ██  ██████
+# ██░░░░ ░░░██░  ░░░░░░██ ░░░██░ ░██  ░██ ██░░░░
+#░░█████   ░██    ███████   ░██  ░██  ░██░░█████
+# ░░░░░██  ░██   ██░░░░██   ░██  ░██  ░██ ░░░░░██
+# ██████   ░░██ ░░████████  ░░██ ░░██████ ██████
+#░░░░░░     ░░   ░░░░░░░░    ░░   ░░░░░░ ░░░░░░
+#
+#
+#  ▓▓▓▓▓▓▓▓▓▓
+# ░▓ author ▓ ROGUE(X3) <rowanfeely.github.io>
+# ░▓   code ▓ https://github.com/RowanFeely/dotfiles
+# ░▓        ▓
+# ░▓▓▓▓▓▓▓▓▓▓
+# ░░░░░░░░░░
+
+
+FULL=▓
+EMPTY=░
+# EOL=▒
+EOL=░
+SIZE=7
+C0="#000000"
+C1="#222222"
+C2="#1C596E"
+C3="#B3291C"
+C4="#3A3A3A"
+C5="#efefef"
+C6="#878787"
+C7="#666666"
+
+draw()
+{
+	perc=$1
+	SIZE=$2
+	inc=$(( perc * SIZE / 100 ))
+	out=
+	thiscolor=
+	for v in `seq 0 $(( SIZE - 1 ))`; do
+		test "$v" -le "$inc"   \
+		&& out="${out}#[fg=$C1]${FULL}" \
+		|| out="${out}#[fg=$C1]${EMPTY}"
+	done
+	echo $out
+}
+#temp()
+# {
+#	t=$(sensors | awk '/Core\ 0/ {gsub(/\+/,"",$3); gsub(/\..+/,"",$3)    ; #print $3}')
+#	tc=$C0
+#	case 1 in
+#		$((t <= 50)))
+#			tc=$C2
+#			;;
+#		$((t >= 75)))
+#			tc=$C3
+#			;;
+#	esac
+#	echo "#[fg=$tc]$t°c"
+#}
+temp() # DONE
+{
+  t=$(istats cpu temp --no-labels | awk -F . '{print $1}' | tr -d 'C°')
+	tc=$C0
+	case 1 in
+		$((t <= 50)))
+			tc=$C2
+			;;
+		$((t >= 75)))
+			tc=$C3
+			;;
+	esac
+	echo "#[fg=$tc]$t"°"c"
+}
+#bat()
+# {
+#	BATPATH=/sys/class/power_supply/BAT0
+#	STATUS=$BATPATH/status
+#	BAT_FULL=$BATPATH/charge_full
+#	BAT_NOW=$BATPATH/charge_now
+#	bf=$(cat $BAT_FULL)
+#	bn=$(cat $BAT_NOW)
+#	bp=$(( 100 * $bn / $bf ))
+#	stat=$(cat $STATUS)
+#	case $stat in
+#		Full)
+#			st="="
+#			;;
+#		Discharging)
+#			st="-"
+#			;;
+#		Charging)
+#			st="+"
+#			;;
+#	esac
+#	test "$bp" -lt 10  \
+#	&& bc=$C3 \
+#	|| bc=$C1
+#	echo $st#[fg=$bc]$bp"%"
+#}
+#cpu()
+# {
+#	CPU_USE=$(grep 'cpu ' /proc/stat | awk '{usage=($2+$4)*100/($2+$4+$5)} END {print usage}')
+#	printf "%.0f" $CPU_USE
+#}
+bat() # DONE
+{
+        STATUS=$(mac battery | grep "Internal" | awk '{print $4}' | tr -d ';')
+        bp=$(mac battery | grep "Internal" | awk '{print $3}' | tr -d '%;')
+	stat=$STATUS
+	case $stat in
+		full)
+			st="="
+			;;
+		discharging)
+			st="-"
+			;;
+		charging)
+			st="+"
+			;;
+	esac
+	test "$bp" -lt 15  \
+	&& bc=$C3 \
+    || bc=$C1
+	echo $st#[fg=$bc]$bp"%"
+}
+cpu() # DONE
+{
+        ~/.tmux/plugins/tmux-cpu/scripts/cpu_percentage.sh | awk -F '.' '{print $1}'
+}
+#ram()
+# {
+#	free | awk '/Mem:/ {print int($3/$2 * 100.0)}'
+#}
+ram() # DONE
+{
+	memory_pressure | grep "System-wide" | awk '{print $5}' | tr -d "%"
+
+}
+vpn()
+{
+	pgrep openconnect >/dev/null 2>&1 && echo "#[fg=3]VPN"
+}
+clock()
+{
+	mtime=$(date +'%H:%M')
+	myear=$(date +'%Y')
+	mmonth=$(date +'%m')
+	mday=$(date +'%d')
+	echo "#[fg=$C5]#[bg=$C4] #[fg=$C5]$mday#[fg=$C6]-$mmonth#[fg=$C5] $mtime #[fg=#4e4e4e]$EOL"
+}
+wifi(){
+    signal=$(airport -I | grep agrCtlRSSI | awk '{print $2}' | sed 's/-//g')
+    sc=#2e3440
+        case 1 in
+	    $((signal >= 50)))
+	        sc=#3B4253
+                ;;
+	    $((signal <= 40)))
+		sc=$C2
+                ;;
+    esac
+          echo "#[fg=$sc]"$signal"db"
+}
+front()
+{
+	echo "#[bg=#8181a6]#[fg=0]▓▒░"
+}
+CPU_INFO=`cpu`
+RAM_INFO=`ram`
+echo `front` `bat` `draw $RAM_INFO 4` `temp` `draw $CPU_INFO 7` `wifi` `clock`

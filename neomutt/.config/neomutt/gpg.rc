@@ -1,0 +1,14 @@
+et crypt_use_gpgme=yes
+set crypt_autosign=yes
+set crypt_verify_sig=yes
+set crypt_replysign=yes
+set crypt_replyencrypt=yes
+set crypt_replysignencrypted=yes
+set crypt_autoencrypt = yes
+
+
+set pgp_default_key="85555E72BD86438714BF6B6C208D9F3269F9FC92"
+set pgp_check_gpg_decrypt_status_fd
+set pgp_use_gpg_agent = yes
+set pgp_self_encrypt = yes
+
