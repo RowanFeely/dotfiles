@@ -22,12 +22,10 @@ alias zsh-config="nvim ~/.zsh"
 alias ranger-config="nvim ~/.config/ranger"
 alias tmux-config="nvim ~/.tmux.conf"
 alias tmux-status-config="~/bin/tmux-status"
-
 # █▓▒░ TODO: fix list output space handling 
 #alias toilet-list='for font in `"ls" /usr/local/Cellar/toilet/0.3/share/figlet/*`; do toilet -f "$font" "rogue" && echo - "$font"; done;'
 alias figlet-list='for font in `"ls" -1 /usr/local/Cellar/toilet/0.3/share/figlet/*`; do figlet -c -f $font "rogue" && echo - "$font"; done;'
 alias figlet-control-list='for font in `"ls" /usr/local/Cellar/toilet/0.3/share/figlet/*.flc`; do figlet -C "$font" "rogue" && echo "- $font"; echo; echo; done;'
-
 alias rogue!="cat ~/dotfiles/banners/rogue-zsh-banner.ans"
 alias bonsai='./bonsai.sh -T -m "$(fortune)"'
 #█▓▒░ hue taps
@@ -50,8 +48,7 @@ alias hdrdtl='echo "#  ▓▓▓▓▓▓▓▓▓▓
 alias xyzzy="echo nothing happens"
 # eval $(thefuck --alias)
 alias ls="exa --icons --group-directories-first -x"
-alias ll="exa --icons -a --group-directories-first --git --git-ignore -b -B --color-scale --long"
-alias lsl="exa --icons --group-directories-first -a -l"
+alias ll="exa --icons --group-directories-first -a -l"
 alias "cd.."="cd ../"
 alias up="cd ../"
 alias rmrf="rm -rf"

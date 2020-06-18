@@ -6,7 +6,7 @@ AuthMechs            LOGIN
 # UseIMAPS             yes
 SSLType IMAPS
 SSLVersions SSLv3
-CertificateFile /Users/rowanfeely/Mail/certs/Certificates.pem
+CertificateFile /Users/rowanfeely/Mail/certs.pem
 
 IMAPStore            gmail-remote
 Account              gmail

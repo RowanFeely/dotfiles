@@ -55,7 +55,7 @@ window:
     y: 15
 
   # Spread additional padding evenly around the terminal content.
-  dynamic_padding: false
+  dynamic_padding: true
 
   # Window decorations
   #
@@ -106,7 +106,7 @@ scrolling:
 font:
   # Normal (roman) font face
   normal:
-    family: "GohuFont Nerd Font Mono"
+    family: "Cozette"
     # Font family
     #
     # Default:
@@ -115,7 +115,7 @@ font:
     #   - (Windows) Consolas
     #family: monospace
     # The `style` can be specified to pick a specific face.
-    # style: Regular
+    # style: book
 
   # Bold font face
   # bold:
@@ -140,12 +140,12 @@ font:
   #style: Italic
 
   # Point size
-  size: 14
+  size: 13
 
   # Offset is the extra space around each character. `offset.y` can be thought of
   # as modifying the line spacing, and `offset.x` as modifying the letter spacing.
   offset:
-    x: 0
+    x: 1
     y: -1
 
   # Glyph offset determines the locations of the glyphs within their cells with

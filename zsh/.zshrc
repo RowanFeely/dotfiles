@@ -23,3 +23,7 @@ export NVM_DIR="$HOME/.nvm"
 export PATH="/usr/local/opt/libxml2/bin:$PATH"
 export PATH="/usr/local/opt/libxml2/bin:$PATH"
 export PATH="/usr/local/opt/openssl@1.1/bin:$PATH"
+# run fortune notification
+plugins=(tmux)
+notify-send -m "⚠ shell reloaded";
+if [ "$TMUX" = "" ]; then tmux; fi
