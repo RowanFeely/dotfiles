@@ -1,11 +1,11 @@
 {
   // Editor UI
   "customizeUI.fontSizeMap": {
-    "13px": "12px",
-    "12px": "12px",
-    "window-title": "11px", // Window title font when using custom titlebar
-    "tab-title": "12px", // Used for editor tab titles
-    "monospace": "10px" // Used for monospace fonts in user interface
+    "13px": "10px",
+    "12px": "10px",
+    "window-title": "9px", // Window title font when using custom titlebar
+    "tab-title": "10px", // Used for editor tab titles
+    "monospace": "8px" // Used for monospace fonts in user interface
   },
   "customizeUI.stylesheet": {
     ".search-view .search-widgets-container": "padding-top: 0px !important",
@@ -17,12 +17,15 @@
   // shrink rows to match XCode
   "shellcheck.run": "onSave",
   "workbench.activityBar.visible": false,
-  "editor.fontSize": 14,
+  "editor.fontSize": 11,
   "editor.smoothScrolling": true,
   "editor.cursorBlinking": "phase",
   "editor.scrollBeyondLastLine": false,
   "editor.colorDecorators": true,
   //  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "window.titleBarStyle": "native",
+  "customizeUI.titleBar": "inline",
+  "customizeUI.activityBar": "wide",
   "editor.emptySelectionClipboard": false,
   "editor.formatOnPaste": true,
   "diffEditor.renderSideBySide": false,
@@ -37,11 +40,9 @@
   "extensions.closeExtensionDetailsOnViewChange": true,
   "extensions.ignoreRecommendations": true,
   "extensions.showRecommendationsOnlyOnDemand": true,
-  "material-icon-theme.activeIconPack": "react",
+  "material-icon-theme.activeIconPack": "vue",
   "material-icon-theme.folders.color": "#616e88",
-  "material-icon-theme.folders.theme": "classic",
   "material-icon-theme.hidesExplorerArrows": true,
-  "material-icon-theme.saturation": 0.6,
   "diffEditor.ignoreTrimWhitespace": true,
   "diffEditor.renderIndicators": true,
   "editor.minimap.maxColumn": 80,
@@ -71,8 +72,6 @@
   "editor.tabSize": 2,
   "workbench.fontAliasing": "antialiased",
   "workbench.startupEditor": "newUntitledFile",
-  "workbench.colorTheme": "Nord",
-  "workbench.iconTheme": "material-icon-theme",
   "search.collapseResults": "alwaysCollapse",
   "telemetry.enableTelemetry": false,
   "workbench.commandPalette.preserveInput": true,
@@ -182,7 +181,7 @@
     "editor.fontFamily": "IBM Plex Sans",
     "editor.fontLigatures": false,
     "editor.fontSize": 14,
-    "editor.lineHeight": 23,
+    //    "editor.lineHeight": 23,
     "editor.wordWrap": "wordWrapColumn",
     "editor.wordWrapColumn": 72,
     "editor.lineNumbers": "off",
@@ -191,14 +190,12 @@
   "[html]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "debug.console.fontFamily": "PragmataPro Mono Liga",
+  "debug.console.fontFamily": "GohuFont Nerd Font Mono",
   "html.format.wrapAttributes": "force-expand-multiline",
   "html.format.wrapLineLength": 78,
   "editor.autoClosingQuotes": "beforeWhitespace",
   "editor.minimap.enabled": true,
   "sync.autoUpload": true,
-  "customizeUI.titleBar": "inline",
-  "window.titleBarStyle": "native",
   "workbench.useExperimentalGridLayout": true,
   "[jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -270,10 +267,10 @@
   "errorLens.errorBackground": "#BE626B",
   "errorLens.errorForeground": "#D8DEE9",
   "editor.renderControlCharacters": true,
-  "editor.fontFamily": "PragmataPro Liga",
+  "editor.fontFamily": "PragmataPro",
   "markdown.preview.lineHeight": 1.62,
   //  "editor.letterSpacing": 0,
-  "editor.matchBrackets": false,
+  "editor.matchBrackets": "never",
   "editor.hideCursorInOverviewRuler": true,
   "window.closeWhenEmpty": true,
   "window.openFilesInNewWindow": "on",
@@ -303,5 +300,8 @@
   "search.actionsPosition": "right",
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true
-  }
+  },
+  "workbench.colorTheme": "Sourcerer",
+  "material-icon-theme.folders.theme": "classic",
+  "window.zoomLevel": 1.2
 }

@@ -18,7 +18,7 @@
 #HIST_STAMPS=yyyy/mm/dd
 
 #█▓▒░ paths
-export PATH=/Users/rowanfeely/.local/bin/:/Users/rowanfeely/Library/Python/3.7/bin:/Users/rowanfeely/Library/Python/2.7/bin:/Users/rowanfeely/.rbenv/shims:/Users/rowanfeely/.gem/bin:/usr/local/opt/fzf/bin:/usr/local/opt/icu4c/bin:/usr/local/opt/icu4c/sbin:/usr/local/bin:/usr/local/sbin:/opt/X11/bin:/usr/local/MacGPG2/bin:/usr/bin:/usr/sbin:/bin:/sbin:/Library/Frameworks/Mono.framework/Versions/Current/Commands:/Users/rowanfeely/.ghcup/env:/Users/rowanfeely/.cargo/bin:/Users/rowanfeely/bin:.local/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:/bin:/sbin:/Users/rowanfeely/bin:.local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
+export PATH="/Users/rowanfeely/Library/Python/3.9/bin:/usr/local/share/python:/Users/rowanfeely/ImageMagick-7.0.10/bin:/Users/rowanfeely/.local/bin/:/Users/rowanfeely/.rbenv/shims:/Users/rowanfeely/src/go/bin:/Users/rowanfeely/.gem/bin:/usr/local/opt/fzf/bin:/usr/local/opt/icu4c/bin:/usr/local/opt/icu4c/sbin:/usr/local/bin:/usr/local/sbin:/opt/X11/bin:/usr/local/MacGPG2/bin:/usr/bin:/usr/sbin:/bin:/sbin:/Library/Frameworks/Mono.framework/Versions/Current/Commands:/Users/rowanfeely/.ghcup/env:/Users/rowanfeely/.cargo/bin:/Users/rowanfeely/bin:.local/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:/bin:/sbin:/Users/rowanfeely/bin:.local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 #export MANPATH=/usr/local/man:$MANPATH
 
 #█▓▒░ lesspass masterpassword
@@ -50,3 +50,6 @@ export MOSH_TITLE_NOPREFIX=1
 
 #█▓▒░ set version
 export ALMOSTONTOP_VERSION=0.6.0
+# ImageMagick
+export MAGICK_HOME="$HOME/ImageMagick-7.0.11"
+export DYLD_LIBRARY_PATH="/Users/rowanfeely/ImageMagick-7.0.10/lib/"

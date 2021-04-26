@@ -1,11 +1,11 @@
 IMAPAccount          gmail
 Host                 imap.gmail.com
 User                 rowanfeely@gmail.com
-Pass                 6_RotJ/Sith
+Pass                 ***REMOVED***
 AuthMechs            LOGIN
 # UseIMAPS             yes
 SSLType IMAPS
-SSLVersions SSLv3
+#SSLVersions SSLv3
 CertificateFile /Users/rowanfeely/Mail/certs.pem
 
 IMAPStore            gmail-remote

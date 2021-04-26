@@ -25,7 +25,7 @@ colorscheme sourcerer
 " colorscheme nord
 
 " use your shell colors
-"colorscheme noctu
+" colorscheme noctu
 
 " integrate with wal color setting
 " colorscheme wal

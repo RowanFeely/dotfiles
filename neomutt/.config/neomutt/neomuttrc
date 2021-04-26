@@ -145,9 +145,10 @@ macro index,pager O "<shell-escape>mbsync -V -a<enter>" "run mbsync to sync all 
 macro index,pager A \
 "<save-message>+gmail/archive<enter>"  \
   "move message to the archive"
-bind index,pager J sidebar-prev       # Ctrl-Shift-J - Previous Mailbox
-bind index,pager K sidebar-next       # Ctrl-Shift-K - Next Mailbox
-bind index,pager L sidebar-open       # Ctrl-Shift-L - Open Highlighted Mailbox
+bind index,pager J sidebar-prev       # Fn-Shift-J - Previous Mailbox
+bind index,pager K sidebar-next       # Fn-Shift-K - Next Mailbox
+bind index,pager L sidebar-open       # Fn-Shift-L - Open Highlighted Mailbox
+bind attach <return>    view-mailcap
 macro attach 'V' "<pipe-entry>iconv -c --to-code=UTF8 > ~/.cache/mutt/mail.html<enter><shell-escape>/usr/local/bin/browsh ~/.cache/mutt/mail.html<enter>"
 bind  index,pager s  flag-message #Star a message
 folder-hook "+[Gmail]/Starred" bind index,pager y flag-message #"Toggle star"
@@ -155,5 +156,5 @@ macro index,pager i  "<save-message>=[Gmail]/Important<enter><enter>" "Mark as i
 
 ###################
 # Sources
-source dracula.muttrc
-source powerline/powerline-rounded.neomuttrc
+source powerline/powerline.neomuttrc
+source powerline/colors/gruvbox-powerline.neomuttrc
