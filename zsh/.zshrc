@@ -27,3 +27,5 @@ export PATH="/usr/local/opt/openssl@1.1/bin:$PATH"
 plugins=(tmux)
 notify-send -m "⚠ shell reloaded";
 if [ "$TMUX" = "" ]; then tmux; fi
+# rogue!;
+# task;

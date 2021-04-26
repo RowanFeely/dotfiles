@@ -15,6 +15,9 @@
 # ░░░░░░░░░░
 #
 # █▓▒░ config aliases
+alias opensesame="mount -o rw,union,update /; mv /Applications/Setup.app /Applications/Setup.app.bak; uicache --all; killall backboardd"
+alias python="/usr/local/bin/python3"
+alias pip="/usr/local/bin/pip3"
 alias cleanupds="find . -type f -name '*.DS_Store' -ls -delete"
 alias ubersicht-config="nvim ~/Library/Application Support/ubersicht/"
 alias nvim-config="nvim ~/.vim"
@@ -36,10 +39,11 @@ alias cloudoff="~/bin/cloud.sh off"
 alias cloudon="~/bin/cloud.sh on"
 alias ccat="pygmentize -O style=sourcerer -f console256 -g"
 alias ontop="source ~/.zsh/plugins/almostontop/almostontop.plugin.zsh"
-alias unimatrix="python3 ~/repos/unimatrix/unimatrix.py -a -f -o -s 97 -l kssss"
 alias sysinfo="~/repos/xero_dotfiles/bin/bin/sysinfo"
+alias stonks="watch -n 5 -t -c ~/repos/ticker.sh $(cat ~/.ticker.conf)"
 alias hdr="figlet -d ~/repos/xero_dotfiles/figlet -f 3d"
 alias hdrdtl='echo "#  ▓▓▓▓▓▓▓▓▓▓
+alias lesspass="lesspass -p -c" 
 # ░▓ author ▓ ROGUE(X3) <rowanfeely.github.io>
 # ░▓   code ▓ https://github.com/RowanFeely/dotfiles
 # ░▓        ▓
@@ -147,3 +151,9 @@ function vid_area() {
 }
 # i hate this
 alias x="startx"
+
+#█▓▒░ ImageMagick
+# convert mov to large gif
+  # ffmpeg -i Untitled.mov -pix_fmt rgb24 output.gif
+# optimise large gif
+  # convert -layers Optimize output.gif output_optimized.gif
