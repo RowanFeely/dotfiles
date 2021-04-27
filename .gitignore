@@ -8,3 +8,4 @@ ranger/.config/ranger/history
 ranger/.config/ranger/tagged
 vim/.vim/bundle/
 vim/.vim/undo/
+**/.DS_Store
