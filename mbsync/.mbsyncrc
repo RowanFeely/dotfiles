@@ -1,7 +1,7 @@
 IMAPAccount          gmail
 Host                 imap.gmail.com
 User                 rowanfeely@gmail.com
-Pass                 0.7O4`=Ls%B*vA;F
+PassCmd "gpg --quiet --for-your-eyes-only --decrypt $HOME/imappassword.gpg"
 AuthMechs            LOGIN
 # UseIMAPS             yes
 SSLType IMAPS
