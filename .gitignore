@@ -9,3 +9,9 @@ ranger/.config/ranger/tagged
 vim/.vim/bundle/
 vim/.vim/undo/
 **/.DS_Store
+ssh/.ssh/authorized_keys
+ssh/.ssh/id_rsa
+ssh/.ssh/id_rsa.pub
+ssh/.ssh/known_hosts
+ssh/.ssh/secret.key
+ssh/.ssh/secret.key.pub
