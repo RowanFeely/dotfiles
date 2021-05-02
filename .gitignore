@@ -15,3 +15,5 @@ ssh/.ssh/id_rsa.pub
 ssh/.ssh/known_hosts
 ssh/.ssh/secret.key
 ssh/.ssh/secret.key.pub
+vim/.vim/plugged/vim-matchit
+vim/.vim/plugged/vim-tmux-resizer
