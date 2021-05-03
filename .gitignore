@@ -17,3 +17,5 @@ ssh/.ssh/secret.key
 ssh/.ssh/secret.key.pub
 vim/.vim/plugged/vim-matchit
 vim/.vim/plugged/vim-tmux-resizer
+vim/.vim/plugged/vim-matchit
+vim/.vim/plugged/vim-tmux-resizer
