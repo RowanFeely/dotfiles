@@ -36,6 +36,9 @@ export LANG=en_US.UTF-8
 export LANGUAGE=en_US.UTF-8
 export LESSCHARSET=utf-8
 
+#█▓▒░ Python environment
+export PYENV_ROOT=/Users/rowanfeely/.pyenv
+
 #█▓▒░ go lang
 # export GOPATH=$HOME/src/go
 

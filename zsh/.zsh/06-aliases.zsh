@@ -16,8 +16,6 @@
 #
 # █▓▒░ config aliases
 alias opensesame="mount -o rw,union,update /; mv /Applications/Setup.app /Applications/Setup.app.bak; uicache --all; killall backboardd"
-alias python="/usr/local/bin/python3"
-alias pip="/usr/local/bin/pip3"
 alias cleanupds="find . -type f -name '*.DS_Store' -ls -delete"
 alias ubersicht-config="nvim ~/Library/Application Support/ubersicht/"
 alias nvim-config="nvim ~/.vim"
