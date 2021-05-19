@@ -15,9 +15,9 @@
 # ░░░░░░░░░░
 #
 # █▓▒░ config aliases
+alias blogdir="cd ~/sites/myblog"
+alias ipinfo="curl ipinfo.io"
 alias opensesame="mount -o rw,union,update /; mv /Applications/Setup.app /Applications/Setup.app.bak; uicache --all; killall backboardd"
-alias python="/usr/local/bin/python3"
-alias pip="/usr/local/bin/pip3"
 alias cleanupds="find . -type f -name '*.DS_Store' -ls -delete"
 alias ubersicht-config="nvim ~/Library/Application Support/ubersicht/"
 alias nvim-config="nvim ~/.vim"
@@ -34,7 +34,7 @@ alias bonsai='./bonsai.sh -T -m "$(fortune)"'
 #█▓▒░ hue taps
 alias huered="hue lights 9 ff6a6a"
 #█▓▒░ aliases
-alias ss="bash ~/dotfiles/fun/bin/pipesx -t 1"
+alias pipes="bash ~/dotfiles/fun/bin/pipesx -t 1"
 alias cloudoff="~/bin/cloud.sh off"
 alias cloudon="~/bin/cloud.sh on"
 alias ccat="pygmentize -O style=sourcerer -f console256 -g"
@@ -43,12 +43,12 @@ alias sysinfo="~/repos/xero_dotfiles/bin/bin/sysinfo"
 alias stonks="watch -n 5 -t -c ~/repos/ticker.sh $(cat ~/.ticker.conf)"
 alias hdr="figlet -d ~/repos/xero_dotfiles/figlet -f 3d"
 alias hdrdtl='echo "#  ▓▓▓▓▓▓▓▓▓▓
-alias lesspass="lesspass -p -c" 
 # ░▓ author ▓ ROGUE(X3) <rowanfeely.github.io>
 # ░▓   code ▓ https://github.com/RowanFeely/dotfiles
 # ░▓        ▓
 # ░▓▓▓▓▓▓▓▓▓▓
 # ░░░░░░░░░░"'
+alias hdrbrk='echo "# █▓▒░"'
 alias xyzzy="echo nothing happens"
 # eval $(thefuck --alias)
 alias ls="exa --icons --group-directories-first -x"
@@ -152,6 +152,32 @@ function vid_area() {
 # i hate this
 alias x="startx"
 
+#█▓▒░ record video
+function index_pcnt_chng() {
+  RED="\033[1;31m"
+  GREEN="\033[1;32m"
+  NOCOLOR="\033[0m"
+  allords=`~/repos/ticker.sh ^AORD | awk '{ print $5 }' | tr -d "()%"`
+  a=$allords
+  if [ $a < 0 ]; then
+    echo "ALLORDS $GREEN$allords$GREEN%$NOCOLOR";
+  else
+    echo "ALLORDS $RED$allords$RED%$NOCOLOR";
+  fi
+}
+
+function index2_pcnt_chng() {
+  RED="\033[1;31m"
+  GREEN="\033[1;32m"
+  NOCOLOR="\033[0m"
+  axjo=`~/repos/ticker.sh ^AXJO | awk '{ print $5 }' | tr -d "()%"`
+  ax=$axjo
+  if [ $ax < 0 ]; then
+    echo "S&P200 $GREEN$axjo$GREEN%$NOCOLOR";
+  else
+    echo "S&P200 $RED$axjo$RED%$NOCOLOR";
+  fi
+}
 #█▓▒░ ImageMagick
 # convert mov to large gif
   # ffmpeg -i Untitled.mov -pix_fmt rgb24 output.gif
