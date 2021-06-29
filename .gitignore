@@ -3,6 +3,7 @@ mpd/.config/mpd/mpd.log
 ncmpcpp/.ncmpcpp/error.log
 vim/.vim/bundle/
 vim/.vim/undo/
+vim/.vim/plugged
 **/.DS_Store
 ssh/.ssh/authorized_keys
 ssh/.ssh/id_rsa
