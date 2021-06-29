@@ -8,9 +8,8 @@
 # ░░░░░░ ░░░░░░  ░░   ░░
 #
 #  ▓▓▓▓▓▓▓▓▓▓
-# ░▓ author ▓ xero <x@xero.nu>
-# ░▓ code   ▓ http://code.xero.nu/dotfiles
-# ░▓ mirror ▓ http://git.io/.files
+# ░▓ author ▓ ROGUE(X3) <rowanfeely.github.io>
+# ░▓   code ▓ https://github.com/RowanFeely/dotfiles
 # ░▓▓▓▓▓▓▓▓▓▓
 # ░░░░░░░░░░
 #

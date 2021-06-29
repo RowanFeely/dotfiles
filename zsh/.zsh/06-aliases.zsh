@@ -8,13 +8,19 @@
 # ░░░░░░ ░░░░░░  ░░   ░░  
 #
 #  ▓▓▓▓▓▓▓▓▓▓
-# ░▓ author ▓ xero <x@xero.nu>
-# ░▓ code   ▓ http://code.xero.nu/dotfiles
-# ░▓ mirror ▓ http://git.io/.files
+# ░▓ author ▓ rogue <rowanfeely.github.io>
+# ░▓ code   ▓ http://github.com/rowanfeely/dotfiles
 # ░▓▓▓▓▓▓▓▓▓▓
 # ░░░░░░░░░░
-#
-# █▓▒░ config aliases
+
+# startup profiling
+alias zsh-benchmark="time zsh -i -c exit"
+alias update-packages="zsh ~/.zsh/update-packages.sh"
+alias update-pip="pip install --upgrade pip"
+alias nvimdebug="nvim -u NORC"
+alias rmtrash="rm-trash"
+alias rm="rm-trash"
+alias genius="swaglyrics --cli"
 alias opensesame="mount -o rw,union,update /; mv /Applications/Setup.app /Applications/Setup.app.bak; uicache --all; killall backboardd"
 alias cleanupds="find . -type f -name '*.DS_Store' -ls -delete"
 alias ubersicht-config="nvim ~/Library/Application Support/ubersicht/"
@@ -39,12 +45,10 @@ alias ccat="pygmentize -O style=sourcerer -f console256 -g"
 alias ontop="source ~/.zsh/plugins/almostontop/almostontop.plugin.zsh"
 alias sysinfo="~/repos/xero_dotfiles/bin/bin/sysinfo"
 alias stonks="watch -n 5 -t -c ~/repos/ticker.sh $(cat ~/.ticker.conf)"
-alias hdr="figlet -d ~/repos/xero_dotfiles/figlet -f 3d"
+alias hdr="figlet -d ~/repos/dotfiles/figlet -f 3d -w $(tput cols)"
 alias hdrdtl='echo "#  ▓▓▓▓▓▓▓▓▓▓
-alias lesspass="lesspass -p -c" 
 # ░▓ author ▓ ROGUE(X3) <rowanfeely.github.io>
 # ░▓   code ▓ https://github.com/RowanFeely/dotfiles
-# ░▓        ▓
 # ░▓▓▓▓▓▓▓▓▓▓
 # ░░░░░░░░░░"'
 alias xyzzy="echo nothing happens"

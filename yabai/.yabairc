@@ -25,16 +25,16 @@ yabai -m config window_opacity_duration        0.2
 yabai -m config window_opacity                 off
 # yabai -m config active_window_opacity          1.0
 # yabai -m config normal_window_opacity          0.9
-# yabai -m config window_shadow                  off
+yabai -m config window_shadow                  off
 # yabai -m config insert_feedback_color        0xaad75f5f
 yabai -m config active_window_border_color     0xff272822
 yabai -m config normal_window_border_color     0xff222222
 yabai -m config insert_feedback_color          0xffc2c2b0
 yabai -m config window_border_width            4
 yabai -m config window_border                  off
-yabai -m config split_ratio                    0.75
+yabai -m config split_ratio                    0.50
 yabai -m config auto_balance                   on
-yabai -m config mouse_modifier                 fn
+yabai -m config mouse_modifier                 ctrl
 yabai -m config mouse_action1                  move
 yabai -m config mouse_action2                  resize
 
@@ -44,6 +44,32 @@ yabai -m config top_padding                    48
 yabai -m config bottom_padding                 22
 yabai -m config left_padding                   26
 yabai -m config right_padding                  26
-yabai -m config window_gap                     16.75
-#yabai -m external_bar all:40:40
-notify-send -m "⚠ yabai reloaded"
+yabai -m config window_gap                     17
+
+# unmanaged windows
+yabai -m rule --add app="^System Preferences$" manage=off
+yabai -m rule --add app="^VLC$" manage=off
+yabai -m rule --add app="^Finder$" manage=off
+yabai -m rule --add app="^Calculator$" manage=off
+yabai -m rule --add app="^The\ Unarchiver$" manage=off
+yabai -m rule --add app="^CleanMyMac\ X$" manage=off
+yabai -m rule --add app="^GIMP-2.10$" manage=off
+
+#yabai -m space 1 --label "Files"
+#yabai -m space 2 --label "Dev"
+#yabai -m space 3 --label "Browsing"
+#yabai -m space 4 --label "Comm"
+# yabai -m space 5 --label "Social"
+# yabai -m space 6 --label "Float"
+# yabai -m space 7 --label "Secondary"
+
+# Files
+##yabai -m rule --add app="Finder"                      space=1
+# Dev
+##yabai -m rule --add app="Alacritty"                   space=2
+##yabai -m rule --add app="Visual Studio Code"          space=2
+# Browsing
+##yabai -m rule --add app="Firefox Developer Edition"   space=3
+## yabai -m rule --add app="Firefox"                     space=3
+
+# send menubar notification 

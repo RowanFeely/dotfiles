@@ -18,8 +18,8 @@
 " must be first, because it changes other options as a side effect
 set nocompatible
 
-" set shell to recognise aliases 
-set shell=/bin/zsh\ -i
+" set shell to recognise aliases
+set shell=/usr/local/bin/zsh\ -i
 
 " security
 set modelines=0

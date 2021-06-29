@@ -17,8 +17,17 @@
 #HIST_STAMPS=yyyy/mm/dd
 
 #█▓▒░ paths
-export PATH=export PATH=/usr/local/bin:/usr/local/share/python:$HOME/bin:$HOME/src/go/bin/:$HOME/.local/bin:$PATH   
-#export MANPATH=/usr/local/man:$MANPATH
+export PATH="$HOME/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+
+# if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+export PATH="$HOME/.gem/ruby/X.X.0/bin:$PATH"
+
+#█▓▒░ go lang
+export GOPATH=$HOME/go
+export GOROOT="$(brew --prefix golang)/libexec"
+export PATH="$PATH:${GOPATH}/bin:${GOROOT}/bin"
+export PATH="$PATH:$HOME/.cargo/bin"
+# export MANPATH=/usr/local/man:$MANPATH
 
 #█▓▒░ preferred text editor
 export EDITOR=nvim
@@ -36,11 +45,4 @@ export LANG=en_US.UTF-8
 export LANGUAGE=en_US.UTF-8
 export LESSCHARSET=utf-8
 
-#█▓▒░ Python environment
-export PYENV_ROOT=/Users/rowanfeely/.pyenv
-
-#█▓▒░ go lang
-# export GOPATH=$HOME/src/go
-
-export MAGICK_HOME="$HOME/ImageMagick-7.0.11"
-export DYLD_LIBRARY_PATH="/Users/rowanfeely/ImageMagick-7.0.10/lib/"
+export DYLD_LIBRARY_PATH="$HOME/ImageMagick-7.0.10/lib/"
