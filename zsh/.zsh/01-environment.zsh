@@ -18,10 +18,9 @@
 
 #█▓▒░ paths
 export PATH="$HOME/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
-
-# if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
-export PATH="$HOME/.gem/ruby/X.X.0/bin:$PATH"
-
+# homebrew ruby and gem paths
+export PATH="/usr/local/opt/ruby/bin:/usr/local/lib/ruby/gems/3.0.0/bin:$PATH"
+export PATH="$HOME/.gem/ruby/3.0.0/bin:$PATH"
 #█▓▒░ go lang
 export GOPATH=$HOME/go
 export GOROOT="$(brew --prefix golang)/libexec"

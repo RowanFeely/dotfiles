@@ -98,9 +98,9 @@ printf "   \e[0;36m%-4s \e[1;36m%-5s %-25s \n" " ram" "$ram%" `draw $ram 15`
 	BATTERY_REMAINING=$(pmset -g batt | egrep -o '([0-9]+%).*' | cut -d\  -f3)
 
 	BATTERY_CHARGING=""
-		if [ "$BATTERY_STATUS" == "Ba" ]; then
+		if [ "$BATTERY_STATUS" == "discharging" ]; then
 	BATTERY_CHARGING="false"
-		elif [ "$BATTERY_STATUS" == "AC" ]; then
+		elif [ "$BATTERY_STATUS" == "charged" ]; then
 	BATTERY_CHARGING="true"
 	fi
 ####
