@@ -1,1 +1,0 @@
-csrutil enable --without debug --without fs
