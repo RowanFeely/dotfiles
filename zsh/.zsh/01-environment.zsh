@@ -26,7 +26,11 @@ export GOPATH=$HOME/go
 export GOROOT="$(brew --prefix golang)/libexec"
 export PATH="$PATH:${GOPATH}/bin:${GOROOT}/bin"
 export PATH="$PATH:$HOME/.cargo/bin"
+export PATH="/usr/local/opt/python/libexec/bin:$PATH"
 # export MANPATH=/usr/local/man:$MANPATH
+
+# check ruby env
+eval "$(rbenv init -)"
 
 #█▓▒░ preferred text editor
 export EDITOR=nvim

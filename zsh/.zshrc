@@ -17,5 +17,5 @@
 
 #█▓▒░ load configs
 for config (~/.zsh/*.zsh) source $config
-
+ccat ~/.zsh/banner.txt
 # zprof

@@ -156,5 +156,5 @@ macro index,pager i  "<save-message>=[Gmail]/Important<enter><enter>" "Mark as i
 
 ###################
 # Sources
+source powerline/colors/sourcerer-powerline.neomuttrc
 source powerline/powerline.neomuttrc
-source powerline/colors/gruvbox-powerline.neomuttrc

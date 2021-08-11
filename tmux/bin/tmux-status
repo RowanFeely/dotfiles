@@ -173,7 +173,7 @@ wifi(){
 }
 front()
 {
-	echo "#[bg=#ff6a6a]#[fg=0]▓▒░"
+	echo "#[bg=#8181a6]#[fg=0]▓▒░"
 }
 CPU_INFO=`cpu`
 RAM_INFO=`ram`

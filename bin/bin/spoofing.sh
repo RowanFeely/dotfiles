@@ -14,9 +14,10 @@
 # ░▓▓▓▓▓▓▓▓▓▓
 # ░░░░░░░░░░
 #
-addr=`ifconfig en0 |grep ether | sed 's/[^ ]* //'`
-if [[ $addr == 28:CF:E9:12:8F:97 ]] ;
-then
+addr=`ifconfig en0 | grep ether | sed 's/[^ ]* //'`
+oldaddr="28:cf:e9:12:8f:97"
+echo "current: $oldaddr"
+if [ $addr == $oldaddr ] ; then
 	echo "wifi spoofing disabled"
 else
 	echo "wifi spoofed"
