@@ -12,7 +12,6 @@
 #  ▓▓▓▓▓▓▓▓▓▓
 # ░▓ author ▓ ROGUE(X3) <rowanfeely.github.io>
 # ░▓   code ▓ https://github.com/RowanFeely/dotfiles
-# ░▓        ▓
 # ░▓▓▓▓▓▓▓▓▓▓
 # ░░░░░░░░░░
 
@@ -41,7 +40,7 @@ yabai -m config mouse_action2                  resize
 # general space settings
 yabai -m config layout                         bsp
 yabai -m config top_padding                    50
-yabai -m config bottom_padding                 18
+yabai -m config bottom_padding                 13
 yabai -m config left_padding                   18
 yabai -m config right_padding                  18
 yabai -m config window_gap                     15
@@ -70,7 +69,7 @@ yabai -m rule --add app="^Finder$"                      space=2
 yabai -m rule --add app="^EasyFind$"                    space=2
 # Dev
 yabai -m rule --add app="^Alacritty$"                   space=4
-yabai -m rule --add app="^Visual Studio Code$"          space=4
+yabai -m rule --add app="^Code$"                        space=4
 yabai -m rule --add app="^Android Studio$"              space=4
 yabai -m rule --add app="^iA Writer$"                   space=4
 # Browsing

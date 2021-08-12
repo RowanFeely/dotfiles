@@ -17,5 +17,5 @@
 
 #█▓▒░ load configs
 for config (~/.zsh/*.zsh) source $config
-ccat ~/.zsh/banner.txt
+cat ~/dotfiles/banners/rogue-zsh-banner.ans
 # zprof

@@ -124,8 +124,8 @@ set crypt_replysignencrypted = yes
 ###############
 # Sidebar
 #
-# set sidebar_new_mail_only
-set sidebar_visible                         # Make the Sidebar visible by default
+set sidebar_new_mail_only
+#set sidebar_visible                         # Make the Sidebar visible by default
 bind index,pager B sidebar-toggle-visible   # Use 'B' to switch the Sidebar on and off
 set sidebar_width = 25                      # Plenty of space
 set sidebar_divider_char = '│'              # Pretty line-drawing character
@@ -156,5 +156,6 @@ macro index,pager i  "<save-message>=[Gmail]/Important<enter><enter>" "Mark as i
 
 ###################
 # Sources
-source powerline/colors/sourcerer-powerline.neomuttrc
 source powerline/powerline.neomuttrc
+source powerline/colors/sourcerer-powerline.neomuttrc
+#source powerline/colors/gruvbox-powerline.neomuttrc

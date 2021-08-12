@@ -1,32 +1,32 @@
 # cancel theme colors
-color index default brightblack ~Q #ffd7af #1c1c1c
-color index default brightblack ~P #ffd7af #1c1c1c
-color index default brightblack ~T #ffd7af #1c1c1c
-color index default brightblack ~O #ffd7af #1c1c1c
-color index default brightblack ~F #ffd7af #1c1c1c
-color index default brightblack ~N #ffd7af #1c1c1c
+color index default color235 ~Q #ffd7af #1c1c1c
+color index default color235 ~P #ffd7af #1c1c1c
+color index default color235 ~T #ffd7af #1c1c1c
+color index default color235 ~O #ffd7af #1c1c1c
+color index default color235 ~F #ffd7af #1c1c1c
+color index default color235 ~N #ffd7af #1c1c1c
 
 # add some nice custom coloring to the message list
 # thanks to new neomutt features
 # http://www.mutt.org/doc/manual/#patterns
 # https://neomutt.org/feature/index-color
-color index_subject brightcyan brightblack "~P !~T !~D" #87afaf ##1c1c1c
-color index_author brightcyan brightblack "~P !~T !~D" #87afaf #1c1c1c
-color index_subject black brightblack "~Q !~T !~D" #767676 #1c1c1c
-color index_author black brightblack "~Q !~T !~D" #767676 #1c1c1c
-color index_subject brightgreen brightblack "~N !~T !~D" #afaf00 #1c1c1c
-color index_author brightgreen brightblack "~N !~T !~D" #afaf00 #1c1c1c
-color index_subject brightgreen brightblack "~O !~T !~D" #afaf00 #1c1c1c
-color index_author brightgreen brightblack "~O !~T !~D" #afaf00 #1c1c1c
-color index_subject color214 brightblack "~F !~T !~D" #ffaf00 #1c1c1c
-color index_author color214 brightblack "~F !~T !~D" #ffaf00 #1c1c1c
-color index_subject color214 brightblack "~F ~N !~T !~D" #ffaf00 #1c1c1c
-color index_author color214 brightblack "~F ~N !~T !~D" #ffaf00 #1c1c1c
-color index_subject brightred brightblack "~= !~T !~D" #d75f5f #1c1c1c
-color index_author brightred brightblack "~= !~T !~D" #d75f5f #1c1c1c
-color index_subject brightcyan brightblack "~P ~N !~T !~D" #87afaf #1c1c1c
-color index_author brightcyan brightblack "~P ~N !~T !~D" #87afaf #1c1c1c
-color index brightblack default "~T" #1c1c1c #ffd7af 
+color index_subject brightcyan color235 "~P !~T !~D" #87afaf ##1c1c1c
+color index_author brightcyan color235 "~P !~T !~D" #87afaf #1c1c1c
+color index_subject color243 color235 "~Q !~T !~D" #767676 #1c1c1c
+color index_author color243 color235 "~Q !~T !~D" #767676 #1c1c1c
+color index_subject brightgreen color235 "~N !~T !~D" #afaf00 #1c1c1c
+color index_author brightgreen color235 "~N !~T !~D" #afaf00 #1c1c1c
+color index_subject brightgreen color235 "~O !~T !~D" #afaf00 #1c1c1c
+color index_author brightgreen color235 "~O !~T !~D" #afaf00 #1c1c1c
+color index_subject color214 color235 "~F !~T !~D" #ffaf00 #1c1c1c
+color index_author color214 color235 "~F !~T !~D" #ffaf00 #1c1c1c
+color index_subject color214 color235 "~F ~N !~T !~D" #ffaf00 #1c1c1c
+color index_author color214 color235 "~F ~N !~T !~D" #ffaf00 #1c1c1c
+color index_subject brightred color235 "~= !~T !~D" #d75f5f #1c1c1c
+color index_author brightred color235 "~= !~T !~D" #d75f5f #1c1c1c
+color index_subject brightcyan color235 "~P ~N !~T !~D" #87afaf #1c1c1c
+color index_author brightcyan color235 "~P ~N !~T !~D" #87afaf #1c1c1c
+color index color235 default "~T" #1c1c1c #ffd7af 
 color index brightwhite red "~D" #ffffaf #af0000
 
 
