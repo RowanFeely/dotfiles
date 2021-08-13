@@ -1,11 +1,11 @@
-#                 ██      
-#                ░██      
-#  ███████ █████ ░██      
-# ░░░░██  ██░░░░ ░██████  
-#    ██  ░░█████ ░██░░░██ 
-#   ██    ░░░░░██░██  ░██ 
-#  ██████ ██████ ░██  ░██ 
-# ░░░░░░ ░░░░░░  ░░   ░░  
+#                 ██
+#                ░██
+#  ███████ █████ ░██
+# ░░░░██  ██░░░░ ░██████
+#    ██  ░░█████ ░██░░░██
+#   ██    ░░░░░██░██  ░██
+#  ██████ ██████ ░██  ░██
+# ░░░░░░ ░░░░░░  ░░   ░░
 #
 #  ▓▓▓▓▓▓▓▓▓▓
 # ░▓ author ▓ rogue <rowanfeely.github.io>
@@ -14,7 +14,6 @@
 # ░░░░░░░░░░
 
 # startup profiling
-alias chrome-app="open /Applications/.Google\ Chrome.app"
 alias zsh-benchmark="time zsh -i -c exit"
 alias update-packages="zsh ~/.zsh/update-packages.sh"
 alias update-pip="pip install --upgrade pip"
