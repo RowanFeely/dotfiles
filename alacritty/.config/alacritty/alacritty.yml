@@ -20,14 +20,14 @@
 # Any items in the `env` entry below will be added as
 # environment variables. Some entries may override variables
 # set by alacritty itself.
-env:
+# env:
   # TERM variable
   #
   # This value is used to set the `$TERM` environment variable for
   # each instance of Alacritty. If it is not present, alacritty will
   # check the local terminfo database and use `alacritty` if it is
   # available, otherwise `xterm-256color` is used.
-  TERM: xterm-256color
+  # TERM: xterm-256color
   #LC_ALL: "en_US.UTF-8"
 window:
   # Window dimensions (changes require restart)
@@ -204,7 +204,7 @@ colors:
     cyan: '#87ceeb'
     white: '#c1cdc1'
 
-# █▓▒░ blaque magick
+# █▓▒░ blaque magick#
 #colors:
 #  primary:
 #    foreground: '#c2c2b0'
@@ -219,7 +219,7 @@ colors:
 #    red: '#5F8787'
 #    green: '#666666'
 #    yellow: '#87875f'
-#    blue: '#888888'
+#    blue: '#999999'
 #    magenta: '#8181a6'
 #    cyan: '#777777'
 #    white: '#c1c1c1'
