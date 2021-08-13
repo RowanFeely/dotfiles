@@ -20,15 +20,15 @@
 # Any items in the `env` entry below will be added as
 # environment variables. Some entries may override variables
 # set by alacritty itself.
-# env:
+env:
   # TERM variable
   #
   # This value is used to set the `$TERM` environment variable for
   # each instance of Alacritty. If it is not present, alacritty will
   # check the local terminfo database and use `alacritty` if it is
   # available, otherwise `xterm-256color` is used.
-  # TERM: xterm-256color
-  #LC_ALL: "en_US.UTF-8"
+  #TERM: xterm-256color
+  LC_ALL: "en_US.UTF-8"
 window:
   # Window dimensions (changes require restart)
   #
@@ -106,7 +106,7 @@ scrolling:
 font:
   # Normal (roman) font face
   normal:
-    family: "cozette"
+    family: "cozettevector"
     # Font family
     #
     # Default:
@@ -140,12 +140,12 @@ font:
   #style: Italic
 
   # Point size
-  size: 13
+  size: 12
 
   # Offset is the extra space around each character. `offset.y` can be thought of
   # as modifying the line spacing, and `offset.x` as modifying the letter spacing.
   offset:
-    x: 2
+    x: 1
     y: 0
 
   # Glyph offset determines the locations of the glyphs within their cells with
@@ -353,7 +353,7 @@ live_config_reload: true
 #   - (Linux) user login shell
 #   - (Windows) powershell
 #shell:
-program: usr/local/bin/zsh
+#program: usr/local/bin/zsh
 #  args:
 #    - --login
 
