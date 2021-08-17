@@ -68,7 +68,7 @@ Plug 'rbong/vim-flog', { 'on': 'Flog' }
 Plug 'mbbill/undotree', { 'on': 'UndotreeToggle' }
 
 " multiplexer integration
-Plug 'roxma/vim-tmux-clipboard'
+"Plug 'roxma/vim-tmux-clipboard'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'melonmanchan/vim-tmux-resizer'
 
