@@ -26,7 +26,7 @@ color index_subject brightred color235 "~= !~T !~D" #d75f5f #1c1c1c
 color index_author brightred color235 "~= !~T !~D" #d75f5f #1c1c1c
 color index_subject brightcyan color235 "~P ~N !~T !~D" #87afaf #1c1c1c
 color index_author brightcyan color235 "~P ~N !~T !~D" #87afaf #1c1c1c
-color index color235 default "~T" #1c1c1c #ffd7af 
+color index color235 default "~T" #1c1c1c #ffd7af
 color index brightwhite red "~D" #ffffaf #af0000
 
 

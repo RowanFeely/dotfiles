@@ -25,7 +25,7 @@ set spoolfile = "+inbox" # This has the shortcut '!'
 set record = "+sent"
 set trash = "+trash"
 set postponed = "+drafts"
-unset help
+# unset help
 set mail_check_stats
 set mail_check_stats_interval = 5
 
@@ -66,7 +66,7 @@ alternative_order text/plain text/html
 # when composing emails, use this command to get addresses from
 # the addressbook with khard first, and everything else from mu index
 # set query_command = "( khard email --parsable '%s' | sed -n '1!p'; mu cfind --format=mutt-ab '%s' )"
-set pager_index_lines = 8
+set pager_index_lines = 15
 set pager_context = 3
 set pager_stop
 set menu_scroll
@@ -109,11 +109,11 @@ set editor = "nvim -c 'set spell' -c 'set textwidth=72' -c 'set wrap' -c 'set no
 set text_flowed
 unset sig_dashes                     # no dashes before sig
 unset mime_forward                   # forward attachments as part of body
-
+set display_filter="sed -e '/\\[-- Type: text.* --\\]/d' | sed -e '/\\[-- Autoview.* --\\]/d' | sed -e '/\\[-- Type.* --\\]/d' |  sed -e '/\\[-- .*unsupported.* --\\]/d' | sed -e '/\\[-- Attachment #[0-9] --\\]/d' | sed -e 's/Attachment #[0-9]: //g' | sed '/./,/^$/!d'"
 ###############
 # GnuPG
 #
-set pgp_sign_as = 85555E72BD86438714BF6B6C208D9F3269F9FC92
+set pgp_sign_as = C98311B22BA859B82565EEF8C34AD21217826356
 set crypt_use_gpgme = yes
 set crypt_autosign = no
 set crypt_verify_sig = yes
