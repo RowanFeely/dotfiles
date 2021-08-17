@@ -25,7 +25,7 @@ set spoolfile = "+inbox" # This has the shortcut '!'
 set record = "+sent"
 set trash = "+trash"
 set postponed = "+drafts"
-# unset help
+unset help
 set mail_check_stats
 set mail_check_stats_interval = 5
 
