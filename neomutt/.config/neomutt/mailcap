@@ -2,3 +2,7 @@ text/html; lynx -assume_charset=%{charset} -display_charset=utf-8 -dump %s; name
 application/vnd.openxmlformats-officedocument.wordprocessingml.document; pandoc --from docx --to markdown %s; copiousoutput
 application/vnd.oasis.opendocument.text; pandoc --from odt --to markdown %s; copiousoutput
 application/pdf; pdftotext -layout %s -; copiousoutput;
+image/gif; open -a Preview %s
+image/jpg; open -a Preview %s; needsterminal; description=JPEG Image; nametemplate=%s.jpg
+image/jpeg; open -a Preview %s; needsterminal; description=JPEG Image; nametemplate=%s.jpg
+application/octet-stream; ~/bin/view-attachment %s "-" 
