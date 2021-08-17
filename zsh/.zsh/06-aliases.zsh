@@ -154,7 +154,7 @@ function vid_area() {
 }
 # i hate this
 alias x="startx"
-
+alias aliases="ccat ~/.zsh/06-aliases.zsh"
 #█▓▒░ ImageMagick
 # convert mov to large gif
   # ffmpeg -i Untitled.mov -pix_fmt rgb24 output.gif
