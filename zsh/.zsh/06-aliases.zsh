@@ -15,7 +15,7 @@
 
 # startup profiling
 alias zsh-benchmark="time zsh -i -c exit"
-alias update-packages="zsh ~/.zsh/update-packages.sh"
+alias update-packages="zsh ~/dotfiles/bin/bin/update-packages.sh"
 alias update-pip="pip install --upgrade pip"
 alias nvimdebug="nvim -u NORC"
 alias checkmacaddr="ifconfig en0 |grep ether | sed 's/[^ ]* //'"
