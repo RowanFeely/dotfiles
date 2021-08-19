@@ -1,13 +1,10 @@
 #!/usr/bin/env sh
-
-#                   ██                ██
-# ██   ██          ░██               ░░ 
-#░░██ ██   ██████  ░██       ██████   ██
-# ░░███   ░░░░░░██ ░██████  ░░░░░░██ ░██
-#  ░██     ███████ ░██░░░██  ███████ ░██
-#  ██     ██░░░░██ ░██  ░██ ██░░░░██ ░██
-# ██     ░░████████░██████ ░░████████░██
-#░░       ░░░░░░░░ ░░░░░    ░░░░░░░░ ░░ 
+#                 __          _
+#    __  ______ _/ /_  ____ _(_)
+#   / / / / __ `/ __ \/ __ `/ /
+#  / /_/ / /_/ / /_/ / /_/ / /
+#  \__, /\__,_/_.___/\__,_/_/
+# /____/
 #
 #  ▓▓▓▓▓▓▓▓▓▓
 # ░▓ author ▓ ROGUE(X3) <rowanfeely.github.io>
@@ -54,6 +51,7 @@ yabai -m rule --add app="^The\ Unarchiver$" manage=off
 yabai -m rule --add app="^CleanMyMac\ X$" manage=off
 yabai -m rule --add app="^GIMP-2.10$" manage=off
 yabai -m rule --add app="^Spotify$" manage=off
+yabai -m rule --add app="^Music$" manage=off
 
 yabai -m space 1 --label "Files"
 yabai -m space 2 --label "Dev"
@@ -76,9 +74,10 @@ yabai -m rule --add app="^iA Writer$"                   space=4
 yabai -m rule --add app="^Firefox Developer Edition$"   space=3
 yabai -m rule --add app="^Firefox$"                     space=3
 yabai -m rule --add app="^Google Chrome$"               space=3
-yabai -m rule --add app="^Tor Browser$"               space=3
+yabai -m rule --add app="^Tor Browser$"                 space=3
 # MUSIC
 yabai -m rule --add app="^Spotify$"                     space=1
+yabai -m rule --add app="^Music$"                     space=1
 # COMMS
 yabai -m rule --add app="^Caprine$"                     space=5
 yabai -m rule --add app="^Messages$"                    space=5

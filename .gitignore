@@ -5,6 +5,7 @@ vim/.vim/bundle/
 vim/.vim/undo/
 vim/.vim/plugged
 **/.DS_Store
+*/.DS_Store
 ssh/.ssh/authorized_keys
 ssh/.ssh/id_rsa
 ssh/.ssh/id_rsa.pub
