@@ -1,0 +1,5 @@
+dnsresolve=$(cat /etc/resolv.conf | grep nameserver | awk '{print $2}')
+if [ "$dnsresolve" != '10.0.0.24' ] ; then echo "VPN" ; else
+echo 'VPN';
+fi
+

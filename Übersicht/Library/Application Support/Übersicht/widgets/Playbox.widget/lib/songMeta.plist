@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>albumName</key>
+	<string>Outsider</string>
+	<key>artistName</key>
+	<string>Veil Of Maya</string>
+	<key>coverURL</key>
+	<string>https://lastfm.freetls.fastly.net/i/u/300x300/e8ead828c7d76f62cda2316e52e33834.jpg</string>
+	<key>currentPosition</key>
+	<string>140</string>
+	<key>isLoved</key>
+	<string>false</string>
+	<key>oldFilename</key>
+	<string>/Users/piotr/Dropbox/Ubersicht/Playbox.Widget/Playbox.widget/lib/cover345.jpg</string>
+	<key>songChanged</key>
+	<string>false</string>
+	<key>songDuration</key>
+	<string>249</string>
+	<key>songName</key>
+	<string>Outsider</string>
+</dict>
+</plist>
