@@ -58,8 +58,8 @@ alias hdrdtl='echo "#  ▓▓▓▓▓▓▓▓▓▓
 # ░░░░░░░░░░"'
 alias xyzzy="echo nothing happens"
 # eval $(thefuck --alias)
-alias ls="exa --icons --group-directories-first -x"
-alias ll="exa --classify --icons --group-directories-first -a -l"
+alias ls="exa --no-user --icons --group-directories-first -x"
+alias ll="exa --no-time --no-user --classify --icons --group-directories-first -a -l --git"
 alias "cd.."="cd ../"
 alias up="cd ../"
 alias rmrf="rm -rf"
