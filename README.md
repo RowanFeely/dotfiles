@@ -1,14 +1,30 @@
-# dotfiles
+           ██            ██     ████ ██  ██
+          ░██           ░██    ░██░ ░░  ░██
+          ░██  ██████  ██████ ██████ ██ ░██  █████   ██████
+       ██████ ██░░░░██░░░██░ ░░░██░ ░██ ░██ ██░░░██ ██░░░░
+      ██░░░██░██   ░██  ░██    ░██  ░██ ░██░███████░░█████
+     ░██  ░██░██   ░██  ░██    ░██  ░██ ░██░██░░░░  ░░░░░██
+     ░░██████░░██████   ░░██   ░██  ░██ ███░░██████ ██████
+      ░░░░░░  ░░░░░░     ░░    ░░   ░░ ░░░  ░░░░░░ ░░░░░░
+
+          ▓▓▓▓▓▓▓▓▓▓
+         ░▓ author ▓ ROGUE(X3) <rowanfeely.github.io>
+         ░▓   code ▓ https://github.com/RowanFeely/dotfiles
+         ░▓▓▓▓▓▓▓▓▓▓
+         ░░░░░░░░░░
+
 __bootstrappable envs for MacOS__
 
 ## installation
 - restore each appllication configuration with `stow [application]`
 
 ## fonts 
-- stow the fonts files
-- or to quickly install baseline font, run:
-	`brew tap homebrew/cask-fonts
-	 brew cask install font-gohufont-nerd-font`
+- copy font files to system font directory:
+	`cp fonts/CozetteVector.dfont /Library/Fonts`
+	`cp fonts/Cozette.dfont /Library/Fonts`
+
+- or to quickly install baseline fonts, run:
+	`brew tap homebrew/cask-fonts`
 
 ## dependencies
 - gem install iStats
