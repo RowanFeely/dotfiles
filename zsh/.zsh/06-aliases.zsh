@@ -43,7 +43,6 @@ alias bonsai='./bonsai.sh -T -m "$(fortune)"'
 #█▓▒░ hue taps
 alias huered="hue lights 9 ff6a6a"
 #█▓▒░ aliases
-alias ss="~/repos/cbonsai/cbonsai -S"
 alias cloudoff="~/bin/cloud.sh off"
 alias cloudon="~/bin/cloud.sh on"
 alias ccat="pygmentize -O style=sourcerer -f console256 -g"
