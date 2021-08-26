@@ -16,16 +16,16 @@
 "
 
 " wizard colors https://git.io/vim.sourcerer
-"colorscheme sourcerer
+colorscheme sourcerer
 
 " dark wizard colors http://git.io/blaquemagick.vim
-colorscheme blaquemagick
+" colorscheme blaquemagick
 
 " icy chill
 "colorscheme nord
 
 " use your shell colors
-"colorscheme noctu
+" colorscheme noctu
 
 " omnifuncs
 augroup omnifuncs
