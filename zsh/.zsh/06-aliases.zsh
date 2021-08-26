@@ -43,7 +43,7 @@ alias bonsai='./bonsai.sh -T -m "$(fortune)"'
 #█▓▒░ hue taps
 alias huered="hue lights 9 ff6a6a"
 #█▓▒░ aliases
-alias ss="bash ~/dotfiles/fun/bin/pipesx -t 1"
+alias ss="~/repos/cbonsai/cbonsai -S"
 alias cloudoff="~/bin/cloud.sh off"
 alias cloudon="~/bin/cloud.sh on"
 alias ccat="pygmentize -O style=sourcerer -f console256 -g"
@@ -164,3 +164,6 @@ alias aliases="ccat ~/.zsh/06-aliases.zsh"
   # ffmpeg -i Untitled.mov -pix_fmt rgb24 output.gif
 # optimise large gif
   # convert -layers Optimize output.gif output_optimized.gif
+alias matrix="unimatrix -a -f -o -s 97 -l kssss"
+alias pipess="~/dotfiles/fun/bin/pipes"
+alias bonsai="~/repos/cbonsai/cbonsai -S"
