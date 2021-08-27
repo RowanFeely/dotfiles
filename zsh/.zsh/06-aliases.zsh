@@ -28,6 +28,7 @@ alias opensesame="mount -o rw,union,update /; mv /Applications/Setup.app /Applic
 alias cleanupds="find . -type f -name '*.DS_Store' -ls -delete"
 alias ubersicht-config="nvim ~/Library/Application Support/ubersicht/"
 alias nvim-config="nvim ~/.vim"
+alias ddg="ddgr -n 5 --unsafe"
 alias zsh-config="nvim ~/.zsh"
 alias ranger-config="nvim ~/.config/ranger"
 alias tmux-config="nvim ~/.tmux.conf"

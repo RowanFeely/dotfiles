@@ -25,7 +25,7 @@ set spoolfile = "+inbox" # This has the shortcut '!'
 set record = "+sent"
 set trash = "+trash"
 set postponed = "+drafts"
-unset help
+# unset help
 set mail_check_stats
 set mail_check_stats_interval = 5
 
@@ -125,7 +125,7 @@ set crypt_replysignencrypted = yes
 # Sidebar
 #
 # set sidebar_new_mail_only
-#set sidebar_visible                         # Make the Sidebar visible by default
+set sidebar_visible                         # Make the Sidebar visible by default
 bind index,pager B sidebar-toggle-visible   # Use 'B' to switch the Sidebar on and off
 set sidebar_width = 25                      # Plenty of space
 set sidebar_divider_char = '│'              # Pretty line-drawing character
