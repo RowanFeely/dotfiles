@@ -53,14 +53,11 @@ yabai -m rule --add app="^GIMP-2.10$" manage=off
 yabai -m rule --add app="^Spotify$" manage=off
 yabai -m rule --add app="^Music$" manage=off
 
-yabai -m space 1 --label "Files"
-yabai -m space 2 --label "Dev"
-yabai -m space 3 --label "Browsing"
-yabai -m space 4 --label "Music"
-yabai -m space 5 --label "Studio"
-yabai -m space 6 --label "Comms"
-yabai -m space 7 --label "Organizer"
-yabai -m space 8 --label "VM"
+yabai -m space 1 --label "DIR"
+yabai -m space 2 --label "WEB"
+yabai -m space 3 --label "DEV"
+yabai -m space 4 --label "SOCIAL"
+yabai -m space 5 --label "MUSIC"
 
 # Files
 yabai -m rule --add app="^Finder$"                      space=2
