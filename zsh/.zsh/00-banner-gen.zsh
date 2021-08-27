@@ -20,46 +20,46 @@ _RAND=`shuf -i1-11 -n1`
 case $_RAND in
 1)
   clear
-  ansicat < "/Users/rowanfeely/Repos/Banner-gen/banners/+l-fd.ans"
+  ansicat < "/Users/rowanfeely/.zsh/banners/+l-fd.ans"
 ;;
 2)
   clear
-  ansicat < "/Users/rowanfeely/Repos/Banner-gen/banners/grk-chkl.ans"
+  ansicat < "/Users/rowanfeely/.zsh/banners/grk-chkl.ans"
 ;;
 3)
   clear
-  ansicat < "/Users/rowanfeely/Repos/Banner-gen/banners/grk-usrl.ans"
+  ansicat < "/Users/rowanfeely/.zsh/banners/grk-usrl.ans"
 ;;
 4)
   clear
-  ansicat < "/Users/rowanfeely/Repos/Banner-gen/banners/hx-askee.ans"
+  ansicat < "/Users/rowanfeely/.zsh/banners/hx-askee.ans"
 ;;
 5)
   clear
-  ansicat < "/Users/rowanfeely/Repos/Banner-gen/banners/hx-askee.ans"
+  ansicat < "/Users/rowanfeely/.zsh/banners/hx-askee.ans"
 ;;
 6)
   clear
-  ansicat < "/Users/rowanfeely/Repos/Banner-gen/banners/jp!xib1.ans"
+  ansicat < "/Users/rowanfeely/.zsh/banners/jp!xib1.ans"
 ;;
 7)
   clear
-  ansicat < "/Users/rowanfeely/Repos/Banner-gen/banners/pmt-bos.ans"
+  ansicat < "/Users/rowanfeely/.zsh/banners/pmt-bos.ans"
 ;;
 8)
   clear
-  ansicat < "/Users/rowanfeely/Repos/Banner-gen/banners/po-pog1.ans"
+  ansicat < "/Users/rowanfeely/.zsh/banners/po-pog1.ans"
 ;;
 9)
   clear
-  ansicat < "/Users/rowanfeely/Repos/Banner-gen/banners/us-bbsln.ans"
+  ansicat < "/Users/rowanfeely/.zsh/banners/us-bbsln.ans"
 ;;
 10)
   clear
-  ansicat < "/Users/rowanfeely/Repos/Banner-gen/banners/us-warez.ans"
+  ansicat < "/Users/rowanfeely/.zsh/banners/us-warez.ans"
 ;;
 11)
   clear
-  ansicat < "/Users/rowanfeely/Repos/Banner-gen/banners/xz-impure.ans"
+  ansicat < "/Users/rowanfeely/.zsh/banners/xz-impure.ans"
 ;;
 esac
