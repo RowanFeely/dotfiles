@@ -40,7 +40,6 @@ alias toilet-list='for font in `"ls" /usr/local/Cellar/toilet/0.3/share/figlet/*
 alias figlet-list='for font in `"ls" -1 /usr/local/share/figlet/fonts/*`; do figlet -c -f $font "rogue" && echo - "$font"; done;'
 alias figlet-control-list='for font in `"ls" /usr/local/Cellar/toilet/0.3/share/figlet/*.flc`; do figlet -C "$font" "rogue" && echo "- $font"; echo; echo; done;'
 alias rogue!="cat ~/dotfiles/banners/rogue-zsh-banner.ans"
-alias bonsai='./bonsai.sh -T -m "$(fortune)"'
 #█▓▒░ hue taps
 alias huered="hue lights 9 ff6a6a"
 #█▓▒░ aliases

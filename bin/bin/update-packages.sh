@@ -28,11 +28,12 @@ then
 else
 	echo "skipped pip"
 fi
-read "npm?Update Node and packages? "
+read "npm?Update Node packages? "
 if [[ "$npm" =~ ^[Yy]$ ]]
 then
-	npm update -g npm && npm update -g || echo "update failed, try npm doctor";
-	echo "update finished"
+#	npm update -g npm && npm update -g || echo "update failed, try npm doctor";
+npm update -g || echo "update failed, try npm doctor";
+echo "update finished"
 else
 	echo "skipped node and npm"
 fi
@@ -44,12 +45,12 @@ then
 else
 	echo "skipped ruby and gems"
 fi
-softwareupdate --list
-read "software? Fetch updates? "
-if [[ "$software" =~ ^[Yy]$ ]]
-then
-	softwareupdate --install
-else
-	echo "skipped software update"
-fi
+#softwareupdate --list
+#read "software? Fetch updates? "
+#if [[ "$software" =~ ^[Yy]$ ]]
+#then
+#	softwareupdate --install
+#else
+#	echo "skipped software update"
+#fi
 echo all done.
