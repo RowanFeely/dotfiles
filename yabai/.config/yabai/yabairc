@@ -85,6 +85,8 @@ yabai -m rule --add app="^Trello$"                      space=6
 yabai -m rule --add app="^Things$"                      space=6
 
 # VM
-yabai -m rule --add app="^VirtualBox$"                  space=7`
+yabai -m rule --add app="^VirtualBox$"                  space=7
+yabai -m rule --add app="^VirtualBoxVM$"                space=7
+yabai -m rule --add app="^VirtualBox VM$"                space=7
 
 # send menubar notification 
