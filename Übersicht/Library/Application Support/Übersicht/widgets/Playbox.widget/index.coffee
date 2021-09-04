@@ -102,7 +102,7 @@ style: """
   white-space nowrap
   background-color bgColor08
   font-family "CozetteVector", system, -apple-system, "Helvetica Neue"
-  font-size 9pt
+  font-size 8pt
   line-height 11pt
   border none
   -webkit-backdrop-filter blurProperties
