@@ -155,6 +155,9 @@ function vid_area() {
   read -r X Y W H G ID < <(slop -f "%x %y %w %h %g %i")
   ffmpeg -f x11grab -s "$W"x"$H" -i :0.0+$X,$Y -f alsa -i pulse ~/$(date "+%Y-%m-%d_%H-%M-%S")_slop_vid.webm
 }
+function rm_dsstore() {
+  find . -type f -name '.DS_Store' -ls -delete
+}
 # i hate this
 alias x="startx"
 alias aliases="ccat ~/.zsh/06-aliases.zsh"
@@ -168,4 +171,3 @@ alias pipess="~/dotfiles/fun/bin/pipes"
 alias bonsai="~/repos/cbonsai/cbonsai -S"
 alias pipesx="/usr/local/bin/bash ./pipesx -i 0.02 -t 5 -n 2"
 alias hn="hnterm"
-alias mdown="glow -s notty -w 80"

@@ -28,11 +28,11 @@ then
 else
 	echo "skipped pip"
 fi
-read "npm?Update Node packages? "
+read "npm?Update NPM? "
 if [[ "$npm" =~ ^[Yy]$ ]]
 then
 #	npm update -g npm && npm update -g || echo "update failed, try npm doctor";
-npm update -g || echo "update failed, try npm doctor";
+npm update -g npm || echo "update failed, try npm doctor";
 echo "update finished"
 else
 	echo "skipped node and npm"
