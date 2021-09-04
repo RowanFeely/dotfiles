@@ -102,8 +102,8 @@ style: """
   white-space nowrap
   background-color bgColor08
   font-family "CozetteVector", system, -apple-system, "Helvetica Neue"
-  font-size 8.5pt
-  line-height 10pt
+  font-size 9pt
+  line-height 11pt
   border none
   -webkit-backdrop-filter blurProperties
   z-index 10
@@ -134,7 +134,7 @@ style: """
 
   .progress
     width @width
-    height 1.2pt
+    height 1pt
     background-color #528b8b
     position absolute
     bottom 0
