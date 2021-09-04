@@ -53,7 +53,8 @@ yabai -m rule --add app="^GIMP-2.10$" manage=off
 yabai -m rule --add app="^Spotify$" manage=off
 yabai -m rule --add app="^Music$" manage=off
 yabai -m rule --add app="^Mupen64Plus OpenGL Video Plugin by Rice v2.5.0$" manage=off
-yabai -m rule --add app="^mupen64plus" manage=off
+yabai -m rule --add app="^mupen64plus$" manage=off
+yabai -m rule --add app="^Caprine$" manage=off
 
 yabai -m space 1 --label "DIR"
 yabai -m space 2 --label "WEB"
