@@ -171,3 +171,4 @@ alias pipess="~/dotfiles/fun/bin/pipes"
 alias bonsai="~/repos/cbonsai/cbonsai -S"
 alias pipesx="/usr/local/bin/bash ./pipesx -i 0.02 -t 5 -n 2"
 alias hn="hnterm"
+alias lazygit='/usr/local/bin/notify-send -m " git checkout"; lazygit'

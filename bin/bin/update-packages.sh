@@ -28,7 +28,7 @@ then
 else
 	echo "skipped pip"
 fi
-read "npm?Update NPM? "
+read "npm?Update npm? "
 if [[ "$npm" =~ ^[Yy]$ ]]
 then
 #	npm update -g npm && npm update -g || echo "update failed, try npm doctor";
@@ -54,3 +54,4 @@ fi
 #	echo "skipped software update"
 #fi
 echo all done.
+/usr/local/bin/notify-send -m "✔ updated packages"
