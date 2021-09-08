@@ -54,7 +54,7 @@ set use_from=yes
 set keep_flagged
 # set new_mail_command="/usr/local/bin/notify-send -m '%n new messages, %u unread' -i '/Users/rowanfeely/Development/mail-notify.jpg'"
 # set new_mail_command="terminal-notifier -title '%v' -subtitle 'New Mail in %f' -message '%n new messages, %u unread.' -activate 'com.apple.Terminal'"
-set new_mail_command="/usr/local/bin/notify-send -m '%n new messages, %u unread'"
+set new_mail_command="/usr/local/bin/notify-send -m '∗ %n new messages,  %u unread'"
 mailboxes ="Inbox" ="[Gmail]/Starred" ="[Gmail]/Important" ="[Gmail]/Sent Mail" ="[Gmail]/All Mail"
 ##############
 # Pager settings
@@ -142,7 +142,7 @@ set sidebar_format ="%B%?F? [%F]?%* %?N?%N/?%S"
 # opening urls with urlscan
 macro pager \cb "<pipe-message> urlscan<Enter>" "call urlscan to extract URLs out of a message"
 # Sync all email
-macro index,pager O "<shell-escape>mbsync -V -a<enter>" "run mbsync to sync all mail"
+macro index,pager O "<shell-escape>mbsync -V -a; <enter>" "run mbsync to sync all mail"
 macro index,pager A \
 "<save-message>+gmail/archive<enter>"  \
   "move message to the archive"

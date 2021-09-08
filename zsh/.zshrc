@@ -18,4 +18,4 @@
 #█▓▒░ load configs
 for config (~/.zsh/*.zsh) source $config
 # zprof
-/usr/local/bin/notify-send -m " zshrc"
+/usr/local/bin/notify-send -m " loading zshrc"

@@ -37,9 +37,9 @@ yabai -m config mouse_action2                  resize
 # general space settings
 yabai -m config layout                         bsp
 yabai -m config top_padding                    50
-yabai -m config bottom_padding                 13
-yabai -m config left_padding                   18
-yabai -m config right_padding                  18
+yabai -m config bottom_padding                 14
+yabai -m config left_padding                   14
+yabai -m config right_padding                  14
 yabai -m config window_gap                     15
 
 # unmanaged windows
@@ -91,4 +91,4 @@ yabai -m rule --add app="^VirtualBoxVM$"                space=7
 yabai -m rule --add app="^VirtualBox VM$"                space=7
 
 # send menubar notification
-/usr/local/bin/notify-send -m " yabairc"
+/usr/local/bin/notify-send -m " loading yabairc"

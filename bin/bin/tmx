@@ -43,3 +43,4 @@ else
 	tmux attach-session -t $session_id \; set-option destroy-unattached
     fi
 fi
+/usr/local/bin/notify-send -m " tmux server started"
