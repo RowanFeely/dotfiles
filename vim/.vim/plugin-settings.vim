@@ -49,9 +49,16 @@ augroup completionhide
   autocmd InsertLeave,CompleteDone * if pumvisible() == 0 | pclose | endif
 augroup end
 
+# use to avoid deoplete plugging all bandwidth, vim usability unstable
+# let g:deoplete#enable_at_startup = 0
+# autocmd InsertEnter * call deoplete#enable()
+
+
 if has('nvim')
-  let g:deoplete#enable_at_startup = 1
-  " let g:deoplete#disable_auto_complete = 1
+#  let g:deoplete#enable_at_startup = 1
+  let g:deoplete#enable_at_startup = 0
+  autocmd InsertEnter * call deoplete#enable()
+" let g:deoplete#disable_auto_complete = 1
   let g:deoplete#enable_ignore_case = 1
   inoremap <expr><tab> pumvisible() ? "\<c-n>" : "\<tab>"
 endif
