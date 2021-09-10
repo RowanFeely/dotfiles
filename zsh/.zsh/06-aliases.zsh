@@ -135,9 +135,9 @@ function email() {
 	echo $3 | mutt -s $2 $1
 }
 #█▓▒░ read stuff like manpages
-function md() {
-    pandoc -s -f markdown -t man "$*" | man -l -
-}
+#function md() {
+#    pandoc -s -f markdown -t man "$*" | man -l -
+#}
 function manwww() {
 	curl -skL "$*" | pandoc -s -f html -t man | man -l -
 }
@@ -172,3 +172,4 @@ alias bonsai="~/repos/cbonsai/cbonsai -S"
 alias pipesx="/usr/local/bin/bash ./pipesx -i 0.02 -t 5 -n 2"
 alias hn="hnterm"
 alias lazygit='/usr/local/bin/notify-send -m " git checkout"; lazygit'
+alias md="glow"
