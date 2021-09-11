@@ -49,3 +49,5 @@ export LANGUAGE=en_US.UTF-8
 export LESSCHARSET=utf-8
 
 export DYLD_LIBRARY_PATH="$HOME/ImageMagick-7.0.10/lib/"
+# add alias for thefuck
+eval "$(thefuck --alias)"
