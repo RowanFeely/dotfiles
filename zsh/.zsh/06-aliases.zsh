@@ -174,7 +174,8 @@ alias hn="hnterm"
 alias lazygit='/usr/local/bin/notify-send -m " git checkout"; lazygit'
 alias md="glow"
 alias progress="watch progress -t -q"
-alias torrent-status="watch -c -t -n 1 transmission-remote -l"
+#alias torrent-status="watch -c -t -n 1 transmission-remote -l"
+alias torrent-status="python3 ~/repos/tremc/tremc"
 function torrent-delete() {
 echo "which torrent ID?"
 read varid
