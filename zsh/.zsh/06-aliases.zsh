@@ -173,4 +173,21 @@ alias pipesx="/usr/local/bin/bash ./pipesx -i 0.02 -t 5 -n 2"
 alias hn="hnterm"
 alias lazygit='/usr/local/bin/notify-send -m " git checkout"; lazygit'
 alias md="glow"
-alias progress="watch progress -q"
+alias progress="watch progress -t -q"
+alias torrent-status="watch -c -t -n 1 transmission-remote -l"
+function torrent-delete() {
+echo "which torrent ID?"
+read varid
+transmission-remote -t $varid -rad
+}
+function torrent-remove() {
+echo "which torrent ID?"
+read varid
+transmission-remote -t $varid -r
+}
+function torrent-add() {
+echo "input magnet URL"
+read varmag
+transmission-remote -a $varmag
+}
+

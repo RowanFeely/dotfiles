@@ -14,7 +14,7 @@
 
 current_ruby=$(rbenv global)
 latest_ruby=$(rbenv install -l | grep -v - | tail -n 1)
-
+clear
 read "homebrew?Update homebrew? "
 if [[ "$homebrew" =~ ^[Yy]$ ]]
 then
