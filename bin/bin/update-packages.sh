@@ -12,6 +12,9 @@
 # ░▓▓▓▓▓▓▓▓▓▓
 # ░░░░░░░░░░
 
+current_ruby=$(rbenv global)
+latest_ruby=$(rbenv install -l | grep -v - | tail -n 1)
+
 read "homebrew?Update homebrew? "
 if [[ "$homebrew" =~ ^[Yy]$ ]]
 then
@@ -40,8 +43,22 @@ fi
 read "ruby?Update Ruby and gems? "
 if [[ "$ruby" =~ ^[Yy]$ ]]
 then
-	sudo gem update --system && gem update && gem cleanup || echo "update failed, check ruby/gem setup";
-	echo "update finished"
+   rbenv-doctor;
+	read "continue?Installation summary. OK to continue? "
+	if [[ "$continue" =~ ^[Yy]$ ]]
+	then
+		if [[ "$current_ruby" = "$latest_ruby" ]]
+		then
+			echo "ruby up to date"
+		else
+			echo "updating ruby"
+			rbenv install $latest_ruby
+		fi
+		sudo gem update --system && gem update && gem cleanup || echo "update failed, check ruby/gem setup";
+		echo "update finished"
+	else
+		echo "discontinuing."
+	fi
 else
 	echo "skipped ruby and gems"
 fi
