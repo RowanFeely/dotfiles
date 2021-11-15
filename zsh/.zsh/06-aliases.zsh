@@ -194,4 +194,17 @@ echo "input magnet URL"
 read varmag
 transmission-remote -a $varmag
 }
-
+function market-status() {
+H=$(date +%H%m)
+if (( $H > 0130 && $H < 2000 )); then
+    NDQ=$(print -P "NASDAQ:%F{green}•%f")
+else
+    NDQ=$(print -P "NASDAQ:%F{red}•%f")
+fi
+if (( $H > 1000 && $H < 1600 )); then
+    ASX=$(print -P "ASX:%F{green}•%f")
+else
+    ASX=$(print -P "ASX:%F{red}•%f")
+fi
+echo $NDQ $ASX
+}
