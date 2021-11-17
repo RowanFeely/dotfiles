@@ -14,7 +14,7 @@ ssh/.ssh/secret.key
 ssh/.ssh/secret.key.pub
 vim/.vim/autoload/
 vim/.vim/undo/
-
+ranger/.config/ranger/plugins
 vim/.vim/autoload/plug.vim.old
 ssh/.ssh/known_hosts.old
 vim/.vim/autoload/plug.vim.old
