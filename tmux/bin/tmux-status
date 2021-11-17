@@ -176,9 +176,11 @@ front()
 	echo "#[bg=#8181a6]#[fg=0]▓▒░"
 }
 market(){
-	H=$(date +%H%m)
+	H=$(date +%H%M)
 	if [[ $H > 0130 && $H < 0800 ]]; then
 		echo "#[fg=$C7]NDX #[fg=2]•"
+	elif [[ $H > 0030 && $H < 0130 ]]; then
+		echo "#[fg=$C7]NDX #[fg=3]•"
 	else
 		echo "#[fg=$C7]NDX #[fg=1]•"
 	fi
