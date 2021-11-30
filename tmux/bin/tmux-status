@@ -178,11 +178,11 @@ front()
 market(){
 	H=$(date +%H%M)
 	if [[ $H > 0130 && $H < 0800 ]]; then
-		echo "#[fg=$C7]NDX #[fg=2]•"
+		echo "#[fg=$C7]NAS #[fg=2]•"
 	elif [[ $H > 0030 && $H < 0130 ]]; then
-		echo "#[fg=$C7]NDX #[fg=3]•"
+		echo "#[fg=$C7]NAS #[fg=3]•"
 	else
-		echo "#[fg=$C7]NDX #[fg=1]•"
+		echo "#[fg=$C7]NAS #[fg=1]•"
 	fi
 	if [[ $H > 1000 && $H < 1600 ]]; then
 		echo "#[fg=$C7]ASX #[fg=2]•"
