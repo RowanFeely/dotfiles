@@ -1,11 +1,11 @@
-#                 ██      
-#                ░██      
-#  ██████  ██████░██      
-# ░░░░██  ██░░░░ ░██████  
-#    ██  ░░█████ ░██░░░██ 
-#   ██    ░░░░░██░██  ░██ 
-#  ██████ ██████ ░██  ░██ 
-# ░░░░░░ ░░░░░░  ░░   ░░  
+#                 ██
+#                ░██
+#  ██████  ██████░██
+# ░░░░██  ██░░░░ ░██████
+#    ██  ░░█████ ░██░░░██
+#   ██    ░░░░░██░██  ░██
+#  ██████ ██████ ░██  ░██
+# ░░░░░░ ░░░░░░  ░░   ░░
 #
 #  ▓▓▓▓▓▓▓▓▓▓
 # ░▓ author ▓ rogue <rowanfeely@github.io>
@@ -19,6 +19,7 @@
 #█▓▒░ paths
 export PATH="$HOME/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
 # homebrew ruby and gem paths
+#export PATH="/usr/local/opt/ruby/bin:/usr/local/lib/ruby/gems/3.0.0/bin:$PATH"
 export PATH="/usr/local/opt/ruby/bin:/usr/local/lib/ruby/gems/3.0.0/bin:$PATH"
 export PATH="$HOME/.gem/ruby/3.0.0/bin:$PATH"
 #█▓▒░ go lang
