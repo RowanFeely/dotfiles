@@ -180,6 +180,7 @@ alias md="glow"
 alias progress="watch progress -t -q"
 #alias torrent-status="watch -c -t -n 1 transmission-remote -l"
 alias torrent-status="python3 ~/repos/tremc/tremc"
+alias wordle="cd ~/repos/wordle-terminal; echo '' && python3 main.py && cd -;"
 function torrent-delete() {
 echo "which torrent ID?"
 read varid
@@ -209,3 +210,9 @@ else
 fi
 echo $NDQ $ASX
 }
+alias yt-dl="youtube-dl -f 'bestaudio/best' -ciw -o '%(title)s.%(ext)s' -v --extract-audio --audio-quality 0 --audio-format mp3"
+function burn-disk() {
+cd ~/repos/spotify2mp3
+python3 run.py
+}
+alias movie-dl="cliflix"

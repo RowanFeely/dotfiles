@@ -55,6 +55,7 @@ yabai -m rule --add app="^Music$" manage=off
 yabai -m rule --add app="^Mupen64Plus OpenGL Video Plugin by Rice v2.5.0$" manage=off
 yabai -m rule --add app="^mupen64plus$" manage=off
 yabai -m rule --add app="^Caprine$" manage=off
+yabai -m rule --add app="^Python$" manage=off
 
 yabai -m space 1 --label "DIR"
 yabai -m space 2 --label "WEB"
@@ -62,33 +63,32 @@ yabai -m space 3 --label "DEV"
 yabai -m space 4 --label "SOCIAL"
 yabai -m space 5 --label "MUSIC"
 
+# MUSIC
+yabai -m rule --add app="^Spotify$"                     space=1
+yabai -m rule --add app="^Music$"                       space=1
 # Files
 yabai -m rule --add app="^Finder$"                      space=2
 yabai -m rule --add app="^EasyFind$"                    space=2
-# Dev
-yabai -m rule --add app="^Alacritty$"                   space=4
-yabai -m rule --add app="^Code$"                        space=4
-yabai -m rule --add app="^Android Studio$"              space=4
-yabai -m rule --add app="^iA Writer$"                   space=4
 # Browsing
 yabai -m rule --add app="^Firefox Developer Edition$"   space=3
 yabai -m rule --add app="^Firefox$"                     space=3
 yabai -m rule --add app="^Google Chrome$"               space=3
 yabai -m rule --add app="^Tor Browser$"                 space=3
-# MUSIC
-yabai -m rule --add app="^Spotify$"                     space=1
-yabai -m rule --add app="^Music$"                     space=1
+# Dev
+yabai -m rule --add app="^Alacritty$"                   space=4
+yabai -m rule --add app="^Code$"                        space=4
+yabai -m rule --add app="^Android Studio$"              space=4
+yabai -m rule --add app="^iA Writer$"                   space=4
 # COMMS
 yabai -m rule --add app="^Caprine$"                     space=5
 yabai -m rule --add app="^Messages$"                    space=5
 # ORGANIZER
 yabai -m rule --add app="^Trello$"                      space=6
 yabai -m rule --add app="^Things$"                      space=6
-
 # VM
 yabai -m rule --add app="^VirtualBox$"                  space=7
 yabai -m rule --add app="^VirtualBoxVM$"                space=7
-yabai -m rule --add app="^VirtualBox VM$"                space=7
+yabai -m rule --add app="^VirtualBox VM$"               space=7
 
 # send menubar notification
 /usr/local/bin/notify-send -m " loading yabairc"
